@@ -1,0 +1,29 @@
+{
+  "repo": "wims-teknologi",
+  "siteName": "Wim Teknologi",
+  "logoText": "teknologi",
+  "logoPrefix": "wim",
+  "tagline": "Tagline Wim Teknologi",
+  "description": "Deskripsi meta Wim Teknologi.",
+  "ogTitle": "Judul OG<br>untuk Wim Teknologi",
+  "ogSubtitle": "Subtitle OG singkat dan informatif.",
+  "category": "teknologi",
+  "categoryLabel": "Teknologi",
+  "parent": "wims",
+  "children": [
+    "wims-teknologi-ai",
+    "wims-teknologi-pemrograman"
+  ],
+  "related": [
+    "wims-game",
+    "wims-bisnis"
+  ],
+  "brand": {
+    "accent": "#6366f1",
+    "accent2": "#06b6d4"
+  },
+  "giscus": {
+    "repoId": "REPO_ID",
+    "categoryId": "CATEGORY_ID"
+  }
+}
