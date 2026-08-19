@@ -3,6 +3,8 @@ title: "Cara Mempercepat Blog Statis"
 date: "2026-08-17"
 category: "SEO"
 excerpt: "Blog statis sudah cepat, tetapi masih bisa dioptimalkan: kompresi gambar, minimalkan JavaScript, dan perhatikan font. Berikut langkah praktisnya."
+meta_title: "Cara Mempercepat Blog Statis"
+meta_description: "Blog statis sudah cepat, tetapi masih bisa dioptimalkan. Simak langkah mempercepatnya: kompresi gambar, minimalkan JavaScript, dan perhatikan font."
 tags: ["performa", "seo", "optimasi"]
 ---
 

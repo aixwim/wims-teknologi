@@ -3,6 +3,8 @@ title: "Cara Menambahkan Sistem Komentar di Blog Astro"
 date: "2026-08-17"
 category: "Astro"
 excerpt: "Blog statis tidak punya server untuk komentar. Giscus memanfaatkan diskusi GitHub sebagai backend. Berikut cara memasangnya di Astro."
+meta_title: "Cara Menambahkan Komentar di Blog Astro"
+meta_description: "Blog statis tidak punya server untuk komentar. Giscus memanfaatkan GitHub Discussions sebagai backend. Simak cara memasangnya di blog Astro."
 tags: ["astro", "komentar", "giscus"]
 ---
 

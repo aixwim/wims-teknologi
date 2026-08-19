@@ -3,6 +3,8 @@ title: "Open Graph Meta Tag untuk Blog: Panduan Lengkap"
 date: "2026-08-17"
 category: "SEO"
 excerpt: "Open Graph mengontrol tampilan link blog saat dibagikan di WhatsApp, Facebook, dan X. Pelajari tag wajib, ukuran gambar, dan cara memasangnya di Astro."
+meta_title: "Open Graph Meta Tag untuk Blog: Panduan Lengkap"
+meta_description: "Open Graph mengontrol tampilan link blog saat dibagikan di WhatsApp, Facebook, dan X. Pelajari tag wajib, ukuran gambar, dan cara memasangnya di Astro."
 tags: ["seo", "open-graph", "meta-tag", "astro"]
 ---
 

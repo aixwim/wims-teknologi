@@ -3,6 +3,8 @@ title: "SEO Dasar untuk Blog Modern"
 date: "2026-08-15"
 category: "SEO"
 excerpt: "SEO tidak harus rumit. Fokus pada hal mendasar: konten, kecepatan, metadata, dan struktur tautan yang baik."
+meta_title: "SEO Dasar untuk Blog Modern"
+meta_description: "SEO tidak harus rumit. Fokus pada hal mendasar: konten berkualitas, kecepatan halaman, metadata, dan struktur tautan agar blog mudah ditemukan."
 tags: ["seo", "tips"]
 ---
 

@@ -3,6 +3,8 @@ title: "Cara Setup Termux untuk Pengembangan Web"
 date: "2026-08-17"
 category: "Termux"
 excerpt: "Langkah demi langkah menyiapkan Termux di Android sebagai lingkungan pengembangan web: update paket, install Node.js dan Git, hingga mengakses penyimpanan."
+meta_title: "Cara Setup Termux untuk Pengembangan Web"
+meta_description: "Langkah menyiapkan Termux di Android sebagai lingkungan pengembangan web: update paket, install Node.js dan Git, hingga akses penyimpanan ponsel."
 tags: ["termux", "android", "setup", "pengembangan-web"]
 ---
 

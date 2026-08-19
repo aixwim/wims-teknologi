@@ -3,6 +3,8 @@ title: "Cara Install Node.js di Termux"
 date: "2026-08-17"
 category: "Termux"
 excerpt: "Node.js adalah fondasi untuk menjalankan framework seperti Astro dan Next.js di Termux. Berikut cara memasangnya, memeriksa versi, dan menangani masalah umum."
+meta_title: "Cara Install Node.js di Termux"
+meta_description: "Node.js adalah fondasi menjalankan framework seperti Astro di Termux. Simak cara memasangnya, memeriksa versi, dan menangani masalah yang umum."
 tags: ["termux", "nodejs", "npm"]
 ---
 

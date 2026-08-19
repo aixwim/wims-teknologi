@@ -3,6 +3,8 @@ title: "Core Web Vitals untuk Blog: Panduan Optimasi Performa"
 date: "2026-08-17"
 category: "SEO"
 excerpt: "Core Web Vitals mengukur pengalaman nyata pengguna: loading, interaksi, dan stabilitas visual. Berikut cara memahami dan mengoptimalkannya untuk blog."
+meta_title: "Core Web Vitals untuk Blog: Panduan Optimasi"
+meta_description: "Core Web Vitals mengukur loading, interaksi, dan stabilitas visual blog. Simak cara memahami dan mengoptimalkan LCP, INP, dan CLS untuk performa terbaik."
 tags: ["seo", "performa", "core-web-vitals"]
 ---
 

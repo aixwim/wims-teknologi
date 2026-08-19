@@ -3,6 +3,8 @@ title: "Cara Submit Sitemap ke Google Search Console"
 date: "2026-08-17"
 category: "SEO"
 excerpt: "Mendaftarkan sitemap di Search Console mempercepat penemuan halaman dan memudahkan pemantauan indeksasi. Berikut langkah-langkahnya."
+meta_title: "Cara Submit Sitemap ke Google Search Console"
+meta_description: "Mendaftarkan sitemap di Search Console mempercepat penemuan halaman dan memudahkan pemantauan indeksasi. Simak langkah verifikasi dan submit sitemap."
 tags: ["seo", "google-search-console", "sitemap", "technical-seo"]
 ---
 

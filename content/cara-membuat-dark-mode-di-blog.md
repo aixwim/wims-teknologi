@@ -3,6 +3,8 @@ title: "Cara Membuat Dark Mode di Blog"
 date: "2026-08-17"
 category: "Astro"
 excerpt: "Dark mode mengurangi silau dan disukai banyak pembaca. Berikut cara membuat toggle tema terang/gelap yang menghormati preferensi sistem."
+meta_title: "Cara Membuat Dark Mode di Blog"
+meta_description: "Dark mode mengurangi silau dan disukai banyak pembaca. Pelajari cara membuat toggle tema terang/gelap yang menghormati preferensi sistem."
 tags: ["dark-mode", "frontend", "css"]
 ---
 

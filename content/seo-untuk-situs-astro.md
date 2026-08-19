@@ -3,6 +3,8 @@ title: "SEO untuk Situs Astro: Checklist Lengkap"
 date: "2026-08-17"
 category: "SEO"
 excerpt: "Astro sangat ramah SEO karena menghasilkan HTML statis. Berikut checklist lengkap SEO untuk situs Astro: metadata, sitemap, structured data, dan performa."
+meta_title: "SEO untuk Situs Astro: Checklist Lengkap"
+meta_description: "Astro ramah SEO karena menghasilkan HTML statis tanpa JavaScript. Simak checklist lengkapnya: metadata, canonical, sitemap, structured data, dan performa."
 tags: ["astro", "seo"]
 ---
 

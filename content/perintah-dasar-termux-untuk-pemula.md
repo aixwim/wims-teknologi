@@ -3,6 +3,8 @@ title: "Perintah Dasar Termux untuk Pemula"
 date: "2026-08-17"
 category: "Termux"
 excerpt: "Kumpulan perintah Linux yang paling sering dipakai di Termux untuk pengembangan: navigasi, file, paket, dan kontrol versi. Disertai penjelasan singkat."
+meta_title: "Perintah Dasar Termux untuk Pemula"
+meta_description: "Kumpulan perintah Linux yang sering dipakai di Termux untuk pengembangan: navigasi, manajemen file, paket, dan kontrol versi, disertai contoh singkat."
 tags: ["termux", "linux", "perintah-dasar"]
 ---
 

@@ -3,6 +3,8 @@ title: "Cara Menulis Konten Blog yang SEO-Friendly"
 date: "2026-08-17"
 category: "SEO"
 excerpt: "Konten yang baik menjawab kebutuhan pembaca sekaligus mudah dipahami mesin pencari. Berikut praktik menulis artikel blog yang SEO-friendly."
+meta_title: "Cara Menulis Konten Blog yang SEO-Friendly"
+meta_description: "Tulis konten blog yang menjawab kebutuhan pembaca sekaligus mudah dipahami mesin pencari: search intent, struktur heading, dan keyword natural."
 tags: ["seo", "content-writing", "on-page-seo"]
 ---
 

@@ -3,6 +3,8 @@ title: "Evergreen Content untuk Blog: Panduan Membuat Konten Abadi"
 date: "2026-08-17"
 category: "SEO"
 excerpt: "Evergreen content tetap relevan bertahun-tahun dan terus mendatangkan traffic. Berikut cara memilih topik dan menulis konten yang tahan lama."
+meta_title: "Evergreen Content untuk Blog: Konten Abadi"
+meta_description: "Evergreen content tetap relevan bertahun-tahun dan terus mendatangkan traffic. Pelajari cara memilih topik, menulis konten tahan lama, dan merawatnya."
 tags: ["seo", "content-strategy", "evergreen-content"]
 ---
 

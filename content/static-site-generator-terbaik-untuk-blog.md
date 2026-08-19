@@ -3,6 +3,8 @@ title: "Static Site Generator Terbaik untuk Blog: Perbandingan"
 date: "2026-08-17"
 category: "Astro"
 excerpt: "Membandingkan Astro, Next.js, Hugo, dan Eleventy untuk blog berdasarkan kemudahan, performa, dan ekosistem. Mana yang paling cocok?"
+meta_title: "Static Site Generator Terbaik untuk Blog"
+meta_description: "Bandingkan Astro, Next.js, Hugo, dan Eleventy untuk blog berdasarkan kemudahan, performa, dan ekosistem agar memilih yang paling sesuai kebutuhan."
 tags: ["astro", "nextjs", "static-site-generator", "perbandingan"]
 ---
 

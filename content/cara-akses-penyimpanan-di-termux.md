@@ -3,6 +3,8 @@ title: "Cara Akses Penyimpanan di Termux"
 date: "2026-08-17"
 category: "Termux"
 excerpt: "Termux terisolasi dari penyimpanan Android secara default. Berikut cara memberi akses penyimpanan dan menggunakan folder bersama seperti Download."
+meta_title: "Cara Akses Penyimpanan di Termux"
+meta_description: "Termux terisolasi dari penyimpanan Android secara default. Pelajari cara memberi akses penyimpanan dengan termux-setup-storage dan memakai folder Download."
 tags: ["termux", "penyimpanan", "android"]
 ---
 

@@ -3,6 +3,8 @@ title: "Kiat Menggunakan Termux untuk Pengembangan Web di Android"
 date: "2026-08-14"
 category: "Termux"
 excerpt: "Termux memungkinkan menjalankan lingkungan Linux di Android. Berikut kiat praktis untuk pengembangan web di dalamnya."
+meta_title: "Kiat Menggunakan Termux untuk Pengembangan Web"
+meta_description: "Termux memungkinkan menjalankan lingkungan Linux di Android. Simak kiat pengembangan web: paket yang tepat, arsitektur biner, dan ruang penyimpanan."
 tags: ["termux", "android", "tips"]
 ---
 

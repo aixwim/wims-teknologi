@@ -3,6 +3,8 @@ title: "Cara Deploy Blog Astro ke GitHub Pages (Gratis)"
 date: "2026-08-17"
 category: "Astro"
 excerpt: "Panduan lengkap menerbitkan blog Astro ke GitHub Pages secara gratis, termasuk pengaturan base URL dan deployment lewat GitHub Actions."
+meta_title: "Cara Deploy Blog Astro ke GitHub Pages Gratis"
+meta_description: "Panduan menerbitkan blog Astro ke GitHub Pages gratis, termasuk pengaturan base URL yang benar dan deployment otomatis lewat GitHub Actions."
 tags: ["astro", "github-pages", "deploy", "termux"]
 ---
 

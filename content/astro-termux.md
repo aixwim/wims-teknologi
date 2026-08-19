@@ -3,6 +3,8 @@ title: "Membangun Blog Cepat dengan Astro di Termux"
 date: "2026-08-12"
 category: "Astro"
 excerpt: "Astro menghasilkan situs statis yang sangat cepat dan mudah dibangun langsung dari ponsel Android via Termux."
+meta_title: "Membangun Blog Cepat dengan Astro di Termux"
+meta_description: "Astro menghasilkan situs statis super cepat dengan nyaris tanpa JavaScript. Simak cara membangun blog dengan Astro langsung dari ponsel via Termux."
 tags: ["astro", "termux", "framework"]
 ---
 

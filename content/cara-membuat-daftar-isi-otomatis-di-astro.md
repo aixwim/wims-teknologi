@@ -3,6 +3,8 @@ title: "Cara Membuat Daftar Isi Otomatis di Blog Astro"
 date: "2026-08-17"
 category: "Astro"
 excerpt: "Daftar isi memudahkan pembaca menavigasi artikel panjang dan memberi peluang tampil di hasil pencarian. Berikut cara membuatnya otomatis di Astro."
+meta_title: "Cara Membuat Daftar Isi Otomatis di Astro"
+meta_description: "Daftar isi memudahkan pembaca menavigasi artikel panjang dan membantu SEO. Simak cara membuatnya otomatis di blog Astro dari data heading artikel."
 tags: ["astro", "daftar-isi", "toc"]
 ---
 

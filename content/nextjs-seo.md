@@ -3,6 +3,8 @@ title: "Mengapa Next.js Bagus untuk Blog dan SEO"
 date: "2026-08-10"
 category: "Next.js"
 excerpt: "Next.js menawarkan SSG dan SSR yang membantu SEO serta performa. Berikut alasannya."
+meta_title: "Mengapa Next.js Bagus untuk Blog dan SEO"
+meta_description: "Next.js menawarkan SSG dan SSR yang membantu SEO serta performa blog. Simak keunggulan metadata, sitemap, dan robots.txt untuk situs yang cepat."
 tags: ["seo", "nextjs", "framework"]
 ---
 

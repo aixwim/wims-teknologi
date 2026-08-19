@@ -3,6 +3,8 @@ title: "Tags dan Kategori di Astro: Cara Membuatnya"
 date: "2026-08-17"
 category: "Astro"
 excerpt: "Tags dan kategori membantu pembaca menemukan konten terkait dan memperkuat struktur topik. Berikut cara mengelompokkan dan membuat halaman tag di Astro."
+meta_title: "Tags dan Kategori di Astro: Cara Membuatnya"
+meta_description: "Tags dan kategori membantu pembaca menemukan konten terkait dan memperkuat struktur topik. Simak cara mengelompokkan dan membuat halaman tag di Astro."
 tags: ["astro", "tags", "kategori"]
 ---
 

@@ -3,6 +3,8 @@ title: "Menggunakan Git dan GitHub di Termux: Panduan Lengkap"
 date: "2026-08-17"
 category: "Termux"
 excerpt: "Kelola repositori dan sinkronkan project langsung dari ponsel. Berikut cara setup Git, membuat SSH key, dan push ke GitHub dari Termux."
+meta_title: "Menggunakan Git dan GitHub di Termux"
+meta_description: "Kelola repositori dan sinkronkan project langsung dari ponsel. Simak cara setup Git, membuat SSH key, dan push ke GitHub dari Termux di mana saja."
 tags: ["termux", "git", "github", "android"]
 ---
 

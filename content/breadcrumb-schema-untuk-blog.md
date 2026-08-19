@@ -3,6 +3,8 @@ title: "Breadcrumb Schema untuk Blog: Panduan JSON-LD"
 date: "2026-08-17"
 category: "SEO"
 excerpt: "Breadcrumb schema membantu Google menampilkan jalur navigasi di hasil pencarian. Berikut cara memasang JSON-LD BreadcrumbList di blog."
+meta_title: "Breadcrumb Schema untuk Blog: Panduan JSON-LD"
+meta_description: "Breadcrumb schema membantu Google menampilkan jalur navigasi di hasil pencarian. Pelajari cara memasang JSON-LD BreadcrumbList yang benar di blog."
 tags: ["seo", "structured-data", "breadcrumb"]
 ---
 

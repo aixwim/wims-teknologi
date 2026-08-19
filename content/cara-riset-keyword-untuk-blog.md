@@ -3,6 +3,8 @@ title: "Cara Riset Keyword untuk Blog (Panduan Praktis)"
 date: "2026-08-17"
 category: "SEO"
 excerpt: "Riset keyword bukan sekadar mencari kata dengan volume besar. Pelajari cara menemukan keyword yang relevan, memahami search intent, dan membangun topical authority."
+meta_title: "Cara Riset Keyword untuk Blog (Panduan Praktis)"
+meta_description: "Riset keyword bukan sekadar mencari kata bervolume besar. Pelajari cara menemukan keyword relevan, memahami search intent, dan membangun topical authority."
 tags: ["seo", "riset-keyword", "content-strategy"]
 ---
 

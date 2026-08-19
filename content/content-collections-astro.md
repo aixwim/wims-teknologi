@@ -3,6 +3,8 @@ title: "Content Collections di Astro: Mengelola Artikel dengan Skema Ketat"
 date: "2026-08-17"
 category: "Astro"
 excerpt: "Content Collections membantu mengelola artikel markdown dengan skema frontmatter yang divalidasi saat build. Berikut cara menggunakannya."
+meta_title: "Content Collections di Astro: Panduan Skema"
+meta_description: "Content Collections membantu mengelola artikel markdown dengan skema frontmatter yang divalidasi saat build. Simak cara kerja dan penerapannya di Astro."
 tags: ["astro", "content-collections", "markdown"]
 ---
 

@@ -3,6 +3,8 @@ title: "Cara Membuat Blog Gratis di GitHub Pages"
 date: "2026-08-17"
 category: "Astro"
 excerpt: "Blog statis bisa diterbitkan gratis di GitHub Pages dengan static site generator. Berikut alur lengkap membuat blog gratis dari nol hingga online."
+meta_title: "Cara Membuat Blog Gratis di GitHub Pages"
+meta_description: "Tidak perlu membayar hosting. Simak alur membuat blog gratis di GitHub Pages dengan static site generator, dari project Astro hingga online."
 tags: ["github-pages", "blog", "static-site-generator", "gratis"]
 ---
 

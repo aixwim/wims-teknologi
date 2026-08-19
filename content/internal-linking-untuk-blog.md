@@ -3,6 +3,8 @@ title: "Internal Linking untuk Blog: Panduan Praktis SEO"
 date: "2026-08-17"
 category: "SEO"
 excerpt: "Tautan internal membantu pembaca menjelajah dan membantu Google memahami struktur serta otoritas halaman. Berikut cara menerapkannya dengan benar."
+meta_title: "Internal Linking untuk Blog: Panduan SEO"
+meta_description: "Tautan internal membantu pembaca menjelajah dan membantu Google memahami struktur situs. Pelajari cara menerapkan internal linking yang benar di blog."
 tags: ["seo", "internal-linking", "on-page-seo"]
 ---
 

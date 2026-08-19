@@ -3,6 +3,8 @@ title: "Keyword Cannibalization di Blog: Cara Menghindarinya"
 date: "2026-08-17"
 category: "SEO"
 excerpt: "Keyword cannibalization terjadi saat beberapa artikel memperebutkan keyword yang sama. Berikut cara mendeteksi, menggabungkan, dan memperbaikinya."
+meta_title: "Keyword Cannibalization di Blog: Cara Hindari"
+meta_description: "Keyword cannibalization terjadi saat beberapa artikel memperebutkan keyword sama dan melemahkan peringkat. Pelajari cara mendeteksi dan mencegahnya."
 tags: ["seo", "keyword-cannibalization", "content-strategy"]
 ---
 

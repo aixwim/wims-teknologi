@@ -3,6 +3,8 @@ title: "Cara Backup Blog Astro di Termux"
 date: "2026-08-17"
 category: "Termux"
 excerpt: "Backup blog Astro cukup dengan menyimpan kode sumber ke repository. Berikut strategi backup aman dari Termux: git, penyimpanan, dan otomatisasi."
+meta_title: "Cara Backup Blog Astro di Termux"
+meta_description: "Strategi backup blog Astro dari Termux: simpan kode sumber ke repository Git, salin ke penyimpanan lokal, dan otomatisasi dengan git hook."
 tags: ["termux", "backup", "astro", "manajemen"]
 ---
 

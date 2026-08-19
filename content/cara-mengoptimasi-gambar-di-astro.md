@@ -3,6 +3,8 @@ title: "Cara Mengoptimasi Gambar di Astro"
 date: "2026-08-17"
 category: "Astro"
 excerpt: "Gambar adalah bobot terbesar halaman. Astro menyediakan komponen Image untuk resizing, format modern, dan lazy loading. Berikut cara menggunakannya."
+meta_title: "Cara Mengoptimasi Gambar di Astro"
+meta_description: "Gambar adalah bobot terbesar halaman. Astro menyediakan komponen Image untuk resizing, format modern, dan lazy loading. Simak cara memakainya."
 tags: ["astro", "gambar", "optimasi", "performa"]
 ---
 

@@ -3,6 +3,8 @@ title: "Canonical URL untuk Blog: Panduan Lengkap"
 date: "2026-08-17"
 category: "SEO"
 excerpt: "Canonical URL menetapkan versi resmi sebuah halaman agar Google tidak menganggapnya duplikat. Berikut cara memasang dan mengelolanya di blog."
+meta_title: "Canonical URL untuk Blog: Panduan Lengkap"
+meta_description: "Canonical URL menetapkan versi resmi halaman agar Google tidak menganggapnya duplikat. Pelajari cara memasang dan mengelola canonical di blog."
 tags: ["seo", "canonical", "technical-seo"]
 ---
 

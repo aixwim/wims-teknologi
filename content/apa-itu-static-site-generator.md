@@ -3,6 +3,8 @@ title: "Apa itu Static Site Generator?"
 date: "2026-08-17"
 category: "Astro"
 excerpt: "Static site generator (SSG) mengubah markdown menjadi HTML statis yang cepat dan SEO-friendly. Berikut penjelasan konsep, cara kerja, dan kapan menggunakannya."
+meta_title: "Apa itu Static Site Generator? Penjelasan Lengkap"
+meta_description: "Static site generator mengubah markdown menjadi HTML statis yang cepat dan SEO-friendly. Pelajari konsep, cara kerja, contoh SSG, dan kapan menggunakannya."
 tags: ["astro", "static-site-generator", "konsep"]
 ---
 

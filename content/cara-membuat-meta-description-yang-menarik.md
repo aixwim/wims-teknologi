@@ -3,6 +3,8 @@ title: "Cara Membuat Meta Description yang Menarik"
 date: "2026-08-17"
 category: "SEO"
 excerpt: "Meta description menentukan apakah orang mengklik hasil pencarian Anda. Berikut cara menulis meta description yang jelas, relevan, dan mendorong klik."
+meta_title: "Cara Membuat Meta Description yang Menarik"
+meta_description: "Meta description menentukan apakah orang mengklik hasil pencarian Anda. Simak cara menulis deskripsi yang jelas, relevan, dan mendorong klik."
 tags: ["seo", "meta-description", "on-page-seo"]
 ---
 

@@ -3,6 +3,8 @@ title: "Sitemap dan Robots.txt untuk Blog: Panduan Lengkap"
 date: "2026-08-17"
 category: "SEO"
 excerpt: "Sitemap membantu mesin pencari menemukan semua halaman blog, sedangkan robots.txt mengatur apa saja yang boleh dirayapi. Berikut cara membuat keduanya di Astro."
+meta_title: "Sitemap dan Robots.txt untuk Blog"
+meta_description: "Sitemap membantu mesin pencari menemukan halaman, robots.txt mengatur perayapan. Pelajari cara membuat keduanya di Astro agar konten cepat terindeks."
 tags: ["seo", "technical-seo", "sitemap", "robots-txt"]
 ---
 
