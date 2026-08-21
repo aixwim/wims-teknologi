@@ -1,0 +1,3009 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+  <title>Wim Teknologi</title>
+  <link>https://aixwim.github.io/wims-teknologi/</link>
+  <description>Artikel tentang teknologi, pengembangan web (Astro, Next.js), Termux, dan SEO praktis untuk pemula hingga menengah.</description>
+  <language>id</language>
+  <lastBuildDate>Fri, 21 Aug 2026 16:05:18 GMT</lastBuildDate>
+  <atom:link href="https://aixwim.github.io/wims-teknologi/rss.xml" rel="self" type="application/rss+xml"/>
+  
+    <item>
+      <title><![CDATA[Cara Membuat Cadangan Data dengan Aturan 3-2-1]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/cara-membuat-cadangan-data-aturan-3-2-1/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/cara-membuat-cadangan-data-aturan-3-2-1/</guid>
+      <description><![CDATA[Aturan 3-2-1 membantu melindungi dokumen dan foto penting dari kerusakan perangkat, kesalahan pengguna, maupun insiden keamanan.]]></description>
+      <category><![CDATA[backup]]></category>
+      <category><![CDATA[keamanan]]></category>
+      <category><![CDATA[data]]></category>
+      <content:encoded><![CDATA[Cadangan data baru terasa penting ketika berkas sudah hilang. Kerusakan perangkat, penghapusan tidak sengaja, pencurian, dan malware dapat terjadi tanpa banyak peringatan. Aturan 3-2-1 memberi kerangka sederhana untuk mengurangi risikonya.
+
+## Arti aturan 3-2-1
+
+Simpan sedikitnya tiga salinan data: satu data aktif dan dua cadangan. Gunakan dua jenis media atau lokasi penyimpanan berbeda, lalu tempatkan satu salinan di luar lokasi utama. Contohnya adalah laptop, penyimpanan eksternal, dan layanan penyimpanan awan.
+
+## Tentukan prioritas
+
+Mulai dari dokumen identitas, arsip pekerjaan, foto pribadi, kunci pemulihan, serta konfigurasi penting. Aplikasi dapat dipasang kembali, tetapi data unik sering tidak dapat digantikan. Kelompokkan berkas agar jadwal pencadangan lebih mudah diatur.
+
+## Otomatiskan dan lindungi
+
+Gunakan pencadangan terjadwal jika tersedia. Enkripsi media yang berisi data sensitif dan aktifkan autentikasi multifaktor pada akun penyimpanan awan. Jangan biarkan drive cadangan selalu terhubung jika ancaman ransomware menjadi perhatian.
+
+## Uji proses pemulihan
+
+Cadangan yang tidak pernah diuji belum tentu dapat digunakan. Secara berkala, pulihkan beberapa berkas ke lokasi sementara dan pastikan isinya dapat dibuka. Catat langkah pemulihan serta lokasi kredensial yang diperlukan.
+
+Strategi terbaik adalah strategi yang berjalan konsisten. Mulailah dari data paling penting, lalu perluas cakupannya setelah proses dasar terbukti dapat dipulihkan.]]></content:encoded>
+      <pubDate>Fri, 21 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Apa itu Static Site Generator?]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/apa-itu-static-site-generator/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/apa-itu-static-site-generator/</guid>
+      <description><![CDATA[Static site generator (SSG) mengubah markdown menjadi HTML statis yang cepat dan SEO-friendly. Berikut penjelasan konsep, cara kerja, dan kapan menggunakannya.]]></description>
+      <category><![CDATA[astro]]></category>
+      <category><![CDATA[static-site-generator]]></category>
+      <category><![CDATA[konsep]]></category>
+      <content:encoded><![CDATA[Static site generator, atau SSG, adalah tool yang mengubah file sumber — biasanya markdown — menjadi halaman HTML statis yang siap diunggah. Berbeda dengan situs dinamis yang merender halaman setiap kali pengunjung datang, SSG membuat semuanya terlebih dahulu saat build. Artikel ini menjelaskan konsepnya secara sederhana.
+
+## Bagaimana SSG Bekerja?
+
+Alur kerjanya kira-kira begini:
+
+1. Anda menulis konten dalam file markdown atau MDX.
+2. SSG menggabungkan konten dengan template untuk menghasilkan HTML.
+3. Hasil build berupa kumpulan file statis di satu folder, misalnya `dist`.
+4. Folder itu diunggah ke hosting mana pun, termasuk GitHub Pages.
+
+Karena tidak ada server yang perlu merender halaman, situs hasil SSG dimuat sangat cepat.
+
+## Perbedaan dengan Situs Dinamis
+
+Situs dinamis seperti WordPress atau situs berbasis PHP merender halaman di server setiap kali diminta. Sedangkan SSG merender semua halaman sekali saat build. Dampaknya:
+
+| Aspek | SSG | Dinamis |
+|---|---|---|
+| Kecepatan | Sangat cepat, HTML siap pakai | Bergantung server |
+| Biaya hosting | Murah, bisa gratis | Perlu server |
+| Interaktivitas | Perlu JavaScript tambahan | Bisa langsung |
+| Update konten | Perlu rebuild | Langsung tampil |
+
+Untuk blog, kecepatan dan biaya murah menjadikan SSG pilihan yang sangat menarik.
+
+## Contoh SSG Populer
+
+Beberapa SSG yang banyak dipakai:
+
+- **Astro** — framework modern yang mengirim HTML statis dengan hampir tanpa JavaScript. Blog ini sendiri dibangun dengan [Astro di Termux](/wims-teknologi/posts/astro-termux/).
+- **Next.js** — framework React dengan mode SSG yang juga mendukung rendering dinamis.
+- **Hugo** — SSG Go yang sangat cepat untuk situs besar.
+- **Eleventy** — ringan dan sederhana, cocok untuk yang menyukai pendekatan minimal.
+
+Pilihan terbaik bergantung kebutuhan, bukan sekadar popularitas.
+
+## Kapan Menggunakan SSG?
+
+SSG sangat cocok bila:
+
+- Konten tidak berubah terlalu sering, seperti blog atau dokumentasi.
+- Perlu kecepatan dan skor SEO yang tinggi.
+- Ingin hosting murah atau gratis.
+- Ingin keamanan tinggi karena tidak ada server yang bisa diserang.
+
+Sebaliknya, situs yang butuh data real-time per pengguna (misalnya dashboard) lebih cocok menggunakan pendekatan dinamis.
+
+## Keunggulan SEO
+
+HTML statis langsung bisa diindeks tanpa menunggu JavaScript dieksekusi. Ditambah kecepatan muat yang tinggi, SSG memenuhi dua hal yang disukai mesin pencari. Fondasi ini kemudian dilengkapi dengan metadata, [sitemap dan robots.txt](/wims-teknologi/posts/sitemap-dan-robots-txt-untuk-blog/), serta [structured data](/wims-teknologi/posts/seo-untuk-situs-astro/) untuk hasil yang optimal.
+
+## FAQ
+
+### Apakah SSG hanya untuk blog?
+
+Tidak. SSG juga dipakai untuk dokumentasi, portofolio, landing page, hingga situs korporat yang kontennya jarang berubah.
+
+### Bagaimana cara meng-update konten di situs SSG?
+
+Anda mengubah file sumber lalu menjalankan build lagi. Hasilnya menggantikan halaman lama, atau diunggah ulang ke hosting.
+
+### Apakah situs SSG bisa memiliki fitur dinamis?
+
+Bisa, lewat JavaScript di sisi klien atau integrasi layanan eksternal seperti sistem komentar dan formulir.
+
+## Kesimpulan
+
+Static site generator mengubah markdown menjadi HTML statis yang cepat, murah, dan ramah SEO. Cocok untuk blog dan situs dengan konten yang tidak berubah setiap detik. Karena mudah di-build dan diunggah, SSG juga praktis dikerjakan dari ponsel lewat Termux — lalu diterbitkan gratis di [GitHub Pages](/wims-teknologi/posts/cara-deploy-blog-astro-ke-github-pages/).]]></content:encoded>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Cara Membuat Blog Gratis di GitHub Pages]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/blog-gratis-di-github-pages/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/blog-gratis-di-github-pages/</guid>
+      <description><![CDATA[Blog statis bisa diterbitkan gratis di GitHub Pages dengan static site generator. Berikut alur lengkap membuat blog gratis dari nol hingga online.]]></description>
+      <category><![CDATA[github-pages]]></category>
+      <category><![CDATA[blog]]></category>
+      <category><![CDATA[static-site-generator]]></category>
+      <category><![CDATA[gratis]]></category>
+      <content:encoded><![CDATA[Tidak perlu membayar hosting untuk memiliki blog. GitHub Pages menyediakan hosting statis gratis, dan bila dikombinasikan dengan static site generator seperti Astro, hasilnya blog yang cepat dengan biaya nol rupiah. Artikel ini menjelaskan cara membuat blog gratis di GitHub Pages dari nol.
+
+## Mengapa GitHub Pages?
+
+Keunggulan utamanya:
+
+- **Gratis** — hosting tanpa biaya selama memenuhi kebijakan penggunaan wajar.
+- **Cepat** — didukung CDN dan cache otomatis.
+- **Keamanan** — tidak ada server dinamis yang bisa diserang.
+- **Integrasi Git** — setiap push bisa memicu deployment otomatis.
+
+Konsep di baliknya dijelaskan di [artikel static site generator](/wims-teknologi/posts/apa-itu-static-site-generator/).
+
+## Siapkan Alat
+
+Anda butuh:
+
+- Akun **GitHub**.
+- **Node.js** untuk menjalankan Astro — di ponsel bisa lewat Termux (lihat [cara install Node.js di Termux](/wims-teknologi/posts/cara-install-nodejs-di-termux/)).
+
+Komputer atau ponsel sama-sama bisa dipakai untuk seluruh alur ini.
+
+## Buat Project Astro
+
+Jalankan:
+
+```bash
+npm create astro@latest blog-saya -- --template minimal
+cd blog-saya
+npm install
+```
+
+Tambahkan artikel ke folder konten, lalu pastikan build berhasil:
+
+```bash
+npm run build
+```
+
+Perintah ini menghasilkan folder `dist` berisi seluruh file statis.
+
+## Atur Konfigurasi Base
+
+Agar aset dimuat benar, atur `base` di `astro.config.mjs` sesuai lokasi project:
+
+```js
+export default defineConfig({
+  site: 'https://username.github.io/',
+  base: '/nama-repo/',
+});
+```
+
+Bila blog ditempatkan di `https://username.github.io/`, `base` dikosongkan. Langkah ini sering menjadi sumber masalah saat aset tidak muncul.
+
+## Push ke GitHub dan Deploy
+
+1. Buat repository baru di GitHub.
+2. Hubungkan project lokal dengan Git (panduan di [artikel Git dan GitHub di Termux](/wims-teknologi/posts/git-dan-github-di-termux/)).
+3. Push kode sumber ke branch `main`.
+4. Aktifkan GitHub Pages di **Settings → Pages**.
+5. Pilih sumber deployment — GitHub Actions direkomendasikan karena otomatis.
+
+Alur deployment lengkapnya dijelaskan di [cara deploy blog Astro ke GitHub Pages](/wims-teknologi/posts/cara-deploy-blog-astro-ke-github-pages/).
+
+## Setelah Online
+
+Situs tidak berhenti di sekadar tampil. Lanjutkan dengan:
+
+- **SEO teknis** — pasang [sitemap dan robots.txt](/wims-teknologi/posts/sitemap-dan-robots-txt-untuk-blog/) serta metadata.
+- **Search Console** — daftarkan situs agar mudah dipantau (lihat [submit sitemap ke Google Search Console](/wims-teknologi/posts/submit-sitemap-ke-google-search-console/)).
+- **Rutin backup** — simpan kode sumber di repo GitHub sudah menjadi backup tersendiri.
+
+## FAQ
+
+### Apakah benar-benar gratis selamanya?
+
+Ya, GitHub Pages tidak memungut biaya untuk penggunaan publik yang wajar. Biaya hanya muncul bila memakai domain kustom yang dibeli sendiri.
+
+### Bisakah memakai domain sendiri di GitHub Pages?
+
+Bisa. Atur custom domain di Settings → Pages, lalu sesuaikan `site` di konfigurasi Astro.
+
+### Apakah GitHub Pages cocok untuk blog SEO?
+
+Sangat cocok. Blog statis di sana cepat, punya struktur URL bersih, dan mendukung sitemap, robots, serta metadata.
+
+## Kesimpulan
+
+Blog gratis di GitHub Pages bisa dibuat dengan tiga langkah: bangun project dengan static site generator, atur `base` dengan benar, lalu push ke repository dan aktifkan Pages. Dengan fondasi ini, selanjutnya tinggal fokus menulis konten yang baik dan mengoptimalkan [SEO](/wims-teknologi/posts/seo-untuk-situs-astro/).]]></content:encoded>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Breadcrumb Schema untuk Blog: Panduan JSON-LD]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/breadcrumb-schema-untuk-blog/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/breadcrumb-schema-untuk-blog/</guid>
+      <description><![CDATA[Breadcrumb schema membantu Google menampilkan jalur navigasi di hasil pencarian. Berikut cara memasang JSON-LD BreadcrumbList di blog.]]></description>
+      <category><![CDATA[seo]]></category>
+      <category><![CDATA[structured-data]]></category>
+      <category><![CDATA[breadcrumb]]></category>
+      <content:encoded><![CDATA[Breadcrumb adalah jalur navigasi yang menunjukkan posisi halaman, misalnya "Beranda > Artikel > Judul Artikel". Dengan menambahkan breadcrumb schema (BreadcrumbList), Google bisa menampilkan jalur ini di hasil pencarian, membuat link tampak lebih informatif dan membantu pengguna memahami struktur situs. Artikel ini menjelaskan cara memasangnya.
+
+## Apa itu BreadcrumbList?
+
+BreadcrumbList adalah tipe structured data dari schema.org yang mendeskripsikan hierarki posisi halaman. Mesin pencari membaca data ini untuk menampilkan breadcrumb di hasil pencarian dan memahami hubungan antar halaman.
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Beranda",
+      "item": "https://contoh.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Artikel",
+      "item": "https://contoh.com/posts/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Judul Artikel",
+      "item": "https://contoh.com/posts/judul/"
+    }
+  ]
+}
+```
+
+Setiap item membutuhkan `position` yang berurutan dimulai dari 1, `name` yang ditampilkan, dan `item` berupa URL resmi halaman.
+
+## Memasang di Astro
+
+Di Astro, breadcrumb schema paling mudah diletakkan di halaman artikel, karena di situlah posisi hierarkinya jelas. Tambahkan blok JSON-LD di komponen halaman:
+
+```astro
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumb)} />
+```
+
+Nilai `name` dan `item` diambil dari data artikel dan URL saat ini. Untuk memastikan URL yang dipakai benar, ikuti pola canonical yang dibahas di [SEO untuk Situs Astro](/wims-teknologi/posts/seo-untuk-situs-astro/).
+
+## Tampilan di Google
+
+Saat breadcrumb schema valid, Google dapat menampilkan jalur navigasi di bawah judul hasil pencarian, seperti:
+
+> Beranda › Artikel › Judul Artikel
+
+Meskipun tampilan ini tidak otomatis muncul untuk semua situs, data yang valid memberi peluang hasil pencarian yang lebih jelas dan mengundang klik.
+
+## Pedoman yang Perlu Diperhatikan
+
+- **Gunakan URL yang bisa diakses** — setiap `item` harus merupakan URL nyata.
+- **Sesuaikan dengan navigasi asli** — schema harus mencerminkan breadcrumb yang tampil di halaman.
+- **Mulai dari beranda** — posisi pertama selalu halaman utama.
+- **Jangan mengarang jalur** — hanya tampilkan hierarki yang benar-benar ada.
+
+## Validasi Structured Data
+
+Setelah memasang, periksa dengan alat validasi seperti Rich Results Test dari Google. Alat ini menunjukkan apakah schema terbaca, berapa item yang terdeteksi, dan ada peringatan atau error. Validasi juga membantu memastikan JSON yang dihasilkan benar.
+
+## FAQ
+
+### Apakah breadcrumb schema memengaruhi peringkat?
+
+Secara langsung tidak besar, tetapi membuat hasil pencarian lebih menarik dan membantu Google memahami struktur situs.
+
+### Apakah bisa menggabungkan beberapa schema dalam satu halaman?
+
+Bisa. Satu halaman boleh memiliki beberapa blok JSON-LD, misalnya `Article`, `BreadcrumbList`, dan `Person`.
+
+### Apakah breadcrumb visual di halaman wajib?
+
+Tidak wajib, tetapi sangat disarankan agar konsisten dengan schema yang dipasang.
+
+## Kesimpulan
+
+Breadcrumb schema adalah structured data yang ringan namun bermanfaat: Google bisa menampilkan jalur navigasi di hasil pencarian, dan pemahaman struktur situs menjadi lebih baik. Pasang BreadcrumbList dengan posisi yang benar, validasi hasilnya, dan pastikan URL konsisten — ini pelengkap penting dari [pengaturan SEO teknis](/wims-teknologi/posts/sitemap-dan-robots-txt-untuk-blog/) blog Anda.]]></content:encoded>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Canonical URL untuk Blog: Panduan Lengkap]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/canonical-url-untuk-blog/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/canonical-url-untuk-blog/</guid>
+      <description><![CDATA[Canonical URL menetapkan versi resmi sebuah halaman agar Google tidak menganggapnya duplikat. Berikut cara memasang dan mengelolanya di blog.]]></description>
+      <category><![CDATA[seo]]></category>
+      <category><![CDATA[canonical]]></category>
+      <category><![CDATA[technical-seo]]></category>
+      <content:encoded><![CDATA[Canonical URL memberi tahu mesin pencari halaman mana yang dianggap sebagai versi resmi ketika sebuah konten bisa diakses dari beberapa URL. Tanpa canonical, Google bisa membuang-buang *crawl budget* pada versi duplikat dan membagi sinyal peringkat. Artikel ini menjelaskan cara memasang canonical URL di blog.
+
+## Kapan Duplikat Terjadi?
+
+Sebuah blog sering menghasilkan beberapa URL untuk isi yang sama, misalnya:
+
+- URL dengan dan tanpa garis miring di akhir: `/blog` dan `/blog/`.
+- Parameter pelacakan: `?utm_source=...`.
+- Versi dengan dan tanpa `www`.
+- Konten yang sama tampil di beberapa kategori.
+
+Canonical memastikan semua variasi itu menunjuk ke satu URL resmi.
+
+## Tag Canonical
+
+Tambahkan tag di bagian `<head>` halaman:
+
+```html
+<link rel="canonical" href="https://contoh.com/posts/judul-artikel/" />
+```
+
+Halaman yang dikunjungi menunjuk ke dirinya sendiri (self-canonical) adalah pola paling umum. Bila sebuah halaman adalah salinan, `href` menunjuk ke URL asli.
+
+## Memasang di Astro
+
+Di Astro, tag canonical paling baik diletakkan di layout dan dihitung dari URL saat ini:
+
+```astro
+---
+const url = new URL(Astro.url.pathname, Astro.site);
+---
+<link rel="canonical" href={url} />
+```
+
+Pastikan konfigurasi `site` dan `base` di `astro.config.mjs` benar, karena `new URL` memakai keduanya untuk membangun URL lengkap. Kesalahan di sini membuat canonical menunjuk ke alamat yang salah — langkah verifikasi pasca-deploy ada di [cara deploy blog Astro ke GitHub Pages](/wims-teknologi/posts/cara-deploy-blog-astro-ke-github-pages/).
+
+## Aturan Canonical yang Benar
+
+Terapkan pedoman berikut:
+
+- **Pakai URL absolut** — jangan memakai URL relatif.
+- **Satu canonical per halaman** — memasang lebih dari satu membingungkan mesin pencari.
+- **Arahkan ke halaman yang bisa diakses** — jangan menunjuk ke halaman yang di-blokir.
+- **Self-canonical untuk versi resmi** — halaman utama menunjuk ke dirinya sendiri.
+- **Konsisten dengan sitemap** — URL di sitemap sebaiknya sama dengan canonical.
+
+## Canonical vs Redirect
+
+Canonical adalah petunjuk, bukan instruksi paksa — Google bisa mengabaikannya bila dinilai tidak tepat. Redirect 301 lebih tegas karena benar-benar memindahkan pengunjung ke URL baru. Gunakan:
+
+- **Redirect 301** saat halaman dipindah permanen.
+- **Canonical** saat dua versi perlu tetap ada, seperti parameter URL atau versi bahasa.
+
+Perbedaannya penting untuk [pengelolaan sitemap dan robots.txt](/wims-teknologi/posts/sitemap-dan-robots-txt-untuk-blog/).
+
+## Memeriksa dengan Search Console
+
+Setelah memasang, verifikasi lewat:
+
+- **Inspeksi URL** di Search Console — lihat apakah canonical yang dipilih diterima Google.
+- **Laporan Indeksasi** — periksa halaman yang ditandai sebagai duplikat.
+
+Jika Google memilih canonical yang berbeda, perbaiki konsistensi antara canonical, sitemap, dan tautan internal.
+
+## FAQ
+
+### Apakah canonical wajib untuk setiap halaman?
+
+Sangat disarankan, terutama bila situs menghasilkan beberapa URL untuk konten yang sama. Tanpa canonical, Google menebak sendiri versi resminya.
+
+### Apakah canonical bisa diabaikan Google?
+
+Bisa, bila Google menilai pilihan Anda kurang tepat. Pastikan canonical selalu menunjuk ke halaman yang paling layak ditampilkan.
+
+### Berapa banyak canonical yang boleh di satu halaman?
+
+Satu. Lebih dari satu tag canonical dianggap konflik dan tidak valid.
+
+## Kesimpulan
+
+Canonical URL adalah pengaman dari masalah konten duplikat: pilih satu URL resmi, pasang tag di layout, dan pastikan konsisten dengan sitemap serta tautan internal. Dengan canonical yang benar, sinyal peringkat tidak terpecah dan indeksasi lebih sehat — bagian dari [fondasi SEO teknis](/wims-teknologi/posts/seo-untuk-situs-astro/) yang baik.]]></content:encoded>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Cara Akses Penyimpanan di Termux]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/cara-akses-penyimpanan-di-termux/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/cara-akses-penyimpanan-di-termux/</guid>
+      <description><![CDATA[Termux terisolasi dari penyimpanan Android secara default. Berikut cara memberi akses penyimpanan dan menggunakan folder bersama seperti Download.]]></description>
+      <category><![CDATA[termux]]></category>
+      <category><![CDATA[penyimpanan]]></category>
+      <category><![CDATA[android]]></category>
+      <content:encoded><![CDATA[Salah satu kebingungan pertama pengguna Termux adalah mengapa folder Android tidak terlihat. Secara default Termux berjalan dalam lingkungan terisolasi, sehingga penyimpanan ponsel perlu dihubungkan secara eksplisit. Artikel ini menjelaskan cara akses penyimpanan di Termux dengan `termux-setup-storage`.
+
+## Kenapa Perlu Setup Penyimpanan?
+
+Untuk alasan keamanan, Termux tidak bisa langsung membaca penyimpanan ponsel. Perintah khusus disediakan untuk membuka akses, karena berhubungan dengan data pribadi. Setelah diaktifkan, Anda bisa:
+
+- Membaca dan menulis file di folder seperti `Download`.
+- Menyimpan backup project di penyimpanan bersama.
+- Mengirim file yang dihasilkan Termux ke aplikasi lain.
+
+## Menggunakan termux-setup-storage
+
+Jalankan perintah berikut di terminal:
+
+```bash
+termux-setup-storage
+```
+
+Lalu izinkan dialog izin penyimpanan yang muncul di Android. Setelah itu, folder `~/storage` dibuat berisi symlink:
+
+```text
+~/storage/shared    → penyimpanan bersama
+~/storage/downloads → folder Download
+~/storage/dcim      → folder DCIM
+~/storage/music     → folder Music
+```
+
+Nama folder bisa sedikit berbeda tergantung versi Android.
+
+## Akses dari Dalam Termux
+
+Untuk menyalin project ke folder Download:
+
+```bash
+cp -r ~/blog-saya ~/storage/downloads/backup
+```
+
+Untuk menulis file langsung di Download:
+
+```bash
+echo "catatan" > ~/storage/downloads/catatan.txt
+```
+
+Perlu diingat: performa membaca dari penyimpanan bersama lebih lambat daripada direktori internal Termux (`$HOME`). Untuk kerja harian, simpan project di `$HOME` dan hanya pindahkan ke penyimpanan bersama saat perlu.
+
+## Menulis ke Aplikasi Lain
+
+Setelah akses aktif, file di folder seperti Download bisa diakses aplikasi pengelola file atau aplikasi lain yang memerlukan izin penyimpanan. Ini berguna untuk mengirim hasil build atau backup ke layanan cloud, email, atau aplikasi catatan.
+
+## Keamanan dan Izin
+
+Beberapa catatan penting:
+
+- **Izin harus diberikan lewat dialog** — tanpa persetujuan, `termux-setup-storage` tidak berfungsi.
+- **Sesuaikan dengan kebutuhan** — jangan membagikan akses lebih dari yang diperlukan.
+- **Perbarui aplikasi** — versi Termux usang bisa gagal membuat symlink. Pastikan aplikasi dari sumber resmi.
+
+Setelah akses penyimpanan lancar, seluruh alur pengembangan di ponsel bisa dimulai — baca [cara setup Termux untuk pengembangan web](/wims-teknologi/posts/cara-setup-termux-untuk-pengembangan-web/) untuk langkah berikutnya.
+
+## FAQ
+
+### Apakah `termux-setup-storage` butuh root?
+
+Tidak. Perintah ini hanya meminta izin penyimpanan normal dari Android.
+
+### Kenapa folder Download tidak muncul setelah perintah dijalankan?
+
+Periksa apakah dialog izin sudah diizinkan, dan pastikan folder `~/storage` benar-benar dibuat dengan `ls ~/storage`. Versi Termux yang usang juga bisa menjadi penyebab.
+
+### Apakah file di penyimpanan bersama aman?
+
+File di folder bersama bisa diakses aplikasi lain yang memiliki izin. Untuk data sensitif, simpan di direktori internal Termux.
+
+## Kesimpulan
+
+Akses penyimpanan di Termux dibuka dengan `termux-setup-storage`, yang membuat folder `~/storage` terhubung ke penyimpanan Android. Gunakan direktori internal Termux untuk kerja sehari-hari agar cepat, dan pindahkan file ke penyimpanan bersama hanya saat perlu berbagi atau backup. Pola inilah yang dipakai banyak pengembang untuk [backup blog dari Termux](/wims-teknologi/posts/cara-backup-blog-astro-di-termux/).]]></content:encoded>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Cara Backup Blog Astro di Termux]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/cara-backup-blog-astro-di-termux/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/cara-backup-blog-astro-di-termux/</guid>
+      <description><![CDATA[Backup blog Astro cukup dengan menyimpan kode sumber ke repository. Berikut strategi backup aman dari Termux: git, penyimpanan, dan otomatisasi.]]></description>
+      <category><![CDATA[termux]]></category>
+      <category><![CDATA[backup]]></category>
+      <category><![CDATA[astro]]></category>
+      <category><![CDATA[manajemen]]></category>
+      <content:encoded><![CDATA[Ponsel bisa hilang, rusak, atau aplikasi tidak sengaja dihapus. Untuk blog yang dikerjakan dari Termux, backup bukan opsional — kode sumber adalah satu-satunya hal yang tidak bisa dibangun ulang. Artikel ini menjelaskan cara backup blog Astro di Termux dengan beberapa lapis strategi.
+
+## Kenapa Git Adalah Backup Utama
+
+Backup terbaik untuk blog adalah menyimpan seluruh kode sumber di repository seperti GitHub. Keuntungannya:
+
+- **Riwayat lengkap** — setiap perubahan tersimpan dan bisa dikembalikan.
+- **Akses dari mana saja** — cukup clone ulang di perangkat baru.
+- **Redundansi otomatis** — server GitHub menyimpan salinan di banyak lokasi.
+
+Semua file yang perlu dibangun ulang ada di repo: konten markdown, konfigurasi, dan template. Jangan lupa memakai `.gitignore` agar `node_modules` dan hasil build tidak ikut ter-commit.
+
+## Menyimpan ke GitHub dari Termux
+
+Pastikan project sudah menjadi repositori dan terhubung ke remote:
+
+```bash
+git status
+git add .
+git commit -m "Backup konten"
+git push origin main
+```
+
+Jika belum pernah menghubungkan project ke GitHub, ikuti panduan di [artikel Git dan GitHub di Termux](/wims-teknologi/posts/git-dan-github-di-termux/).
+
+## Backup ke Penyimpanan Lokal
+
+Selain GitHub, simpan salinan langsung ke penyimpanan ponsel sebagai cadangan kedua:
+
+```bash
+termux-setup-storage
+cp -r ~/blog-saya ~/storage/downloads/backup-blog-$(date +%Y%m%d)
+```
+
+Perintah `termux-setup-storage` membuat folder `~/storage` yang menunjuk ke penyimpanan internal. Salinan ini berguna saat repo di GitHub tidak dapat diakses. Izin penyimpanan dibahas di [cara setup Termux untuk pengembangan web](/wims-teknologi/posts/cara-setup-termux-untuk-pengembangan-web/).
+
+## Otomatisasi dengan Git Hook
+
+Agar tidak lupa, buat *post-commit hook* yang otomatis menyalin ke penyimpanan setiap kali commit:
+
+```bash
+mkdir -p ~/blog-saya/.git/hooks
+echo 'rsync -a --delete ~/blog-saya/ ~/storage/downloads/backup-blog/' > ~/blog-saya/.git/hooks/post-commit
+chmod +x ~/blog-saya/.git/hooks/post-commit
+```
+
+Dengan hook ini, backup lokal mengikuti setiap commit secara otomatis.
+
+## Memulihkan di Perangkat Baru
+
+Bila perangkat diganti, pemulihan cukup sederhana:
+
+```bash
+pkg install nodejs git
+git clone git@github.com:username/blog.git
+cd blog
+npm install
+npm run dev
+```
+
+Pastikan Node.js terpasang — panduannya ada di [cara install Node.js di Termux](/wims-teknologi/posts/cara-install-nodejs-di-termux/).
+
+## Yang Perlu Diperhatikan
+
+- **Jangan commit `node_modules`** — bisa diinstall ulang dengan `npm install`.
+- **Backup `.env` bila ada** — file kredensial tidak ikut masuk repository publik.
+- **Catat versi Node** — tulis di README agar pemulihan di perangkat baru memakai versi yang sama.
+
+## FAQ
+
+### Apakah backup di GitHub cukup?
+
+Untuk kode sumber, ya — karena konten, template, dan konfigurasi semuanya ada di repo. Salinan lokal menambah keamanan bila repo tidak dapat diakses.
+
+### Bagaimana jika lupa commit?
+
+Kebiasaan commit setelah selesai menulis artikel adalah disiplin paling penting. Hook otomatis bisa membantu mengurangi risiko lupa.
+
+### Apakah hasil build `dist` perlu di-backup?
+
+Tidak perlu, karena bisa dibangun ulang dari kode sumber dengan `npm run build`. Menyimpannya hanya membuang ruang.
+
+## Kesimpulan
+
+Backup blog Astro di Termux paling efektif lewat repository Git — setiap commit adalah titik pemulihan yang bisa diakses dari mana saja. Lengkapi dengan salinan lokal di penyimpanan ponsel dan, bila perlu, hook otomatis. Dengan strategi ini, blog aman meski perangkat berganti atau rusak.]]></content:encoded>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Cara Deploy Blog Astro ke GitHub Pages (Gratis)]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/cara-deploy-blog-astro-ke-github-pages/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/cara-deploy-blog-astro-ke-github-pages/</guid>
+      <description><![CDATA[Panduan lengkap menerbitkan blog Astro ke GitHub Pages secara gratis, termasuk pengaturan base URL dan deployment lewat GitHub Actions.]]></description>
+      <category><![CDATA[astro]]></category>
+      <category><![CDATA[github-pages]]></category>
+      <category><![CDATA[deploy]]></category>
+      <category><![CDATA[termux]]></category>
+      <content:encoded><![CDATA[Setelah selesai membangun blog dengan Astro, langkah berikutnya adalah menerbitkannya agar bisa diakses publik. GitHub Pages menjadi pilihan populer karena [gratis](/wims-teknologi/posts/blog-gratis-di-github-pages/) dan terhubung langsung dengan repository. Artikel ini menjelaskan cara deploy blog Astro ke GitHub Pages, termasuk mengatur `base` URL yang benar agar seluruh aset dan halaman termuat dengan baik.
+
+## Persiapkan Repository
+
+Pastikan project Astro sudah di-commit ke repository GitHub. Repository ini akan menampung kode sumber sekaligus menjadi sumber deployment GitHub Pages.
+
+Jika belum ada repository, buat satu di GitHub lalu hubungkan dengan project lokal:
+
+```bash
+git remote add origin git@github.com:username/repository.git
+git branch -M main
+git push -u origin main
+```
+
+Bagi yang mengerjakan dari ponsel, seluruh alur Git ini bisa dijalankan di Termux — panduan lengkapnya ada di artikel [Menggunakan Git dan GitHub di Termux](/wims-teknologi/posts/git-dan-github-di-termux/).
+
+## Atur Base URL di Astro
+
+GitHub Pages menyajikan project pada jalur `/` (untuk *user* atau *organization* pages) atau `/<nama-repository>/` (untuk *project* pages). Nilai ini harus cocok dengan konfigurasi `base` di `astro.config.mjs`.
+
+Contoh untuk project pages bernama `wims`:
+
+```js
+export default defineConfig({
+  site: 'https://username.github.io/',
+  base: '/wims/',
+});
+```
+
+Jika blog berada di `https://username.github.io/` (user pages), `base` bisa dikosongkan atau diisi `/`. Kesalahan paling umum adalah lupa mengisi `base`, sehingga CSS dan gambar tidak ditemukan setelah di-deploy.
+
+## Build Project
+
+Generate file statis dengan:
+
+```bash
+npm run build
+```
+
+Perintah ini menghasilkan folder `dist/` yang berisi seluruh HTML, CSS, JavaScript, gambar, sitemap, dan robots.txt yang siap diunggah.
+
+## Opsi 1: Deploy dengan GitHub Actions
+
+Cara paling direkomendasikan karena otomatis setiap kali ada perubahan di branch `main`. Buat file `.github/workflows/deploy.yml`:
+
+```yaml
+name: Deploy ke GitHub Pages
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - name: Install & Build
+        run: |
+          npm ci
+          npm run build
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
+```
+
+Aktifkan GitHub Pages di **Settings → Pages**, pilih source **GitHub Actions**, lalu push perubahan. Deployment berjalan otomatis setiap ada commit baru.
+
+## Opsi 2: Push Folder dist ke Branch gh-pages
+
+Alternatif tanpa GitHub Actions adalah mengunggah hasil build ke branch `gh-pages`. Anda bisa menggunakan paket `gh-pages`:
+
+```bash
+npm install -D gh-pages
+npx gh-pages -d dist
+```
+
+Setelah itu atur **Settings → Pages → Branch** menjadi `gh-pages`. Metode ini praktis untuk pengujian cepat, tetapi deployment harus dijalankan manual setiap kali konten berubah.
+
+## Verifikasi Hasil Deploy
+
+Setelah berhasil, periksa beberapa hal:
+
+1. **URL utama** — pastikan halaman beranda bisa diakses tanpa 404.
+2. **Halaman artikel** — coba buka beberapa URL artikel.
+3. **Aset statis** — CSS dan gambar harus termuat. Jika tidak, cek kembali nilai `base`.
+4. **sitemap.xml dan robots.txt** — pastikan keduanya dapat diakses, karena penting untuk [SEO teknis blog Anda](/wims-teknologi/posts/sitemap-dan-robots-txt-untuk-blog/).
+5. **Hreflang dan canonical** — pastikan menunjuk ke domain yang benar.
+
+Perlu beberapa menit bagi GitHub Pages untuk menerbitkan perubahan pertama kali.
+
+## FAQ
+
+### Apakah GitHub Pages benar-benar gratis?
+
+Ya. GitHub Pages menyediakan hosting statis gratis selama situs Anda mematuhi kebijakan penggunaan wajar GitHub.
+
+### Bisakah blog Astro di-deploy ke GitHub Pages dari ponsel?
+
+Bisa, selama ponsel memiliki Node.js. Di Termux Anda tinggal menjalankan `npm run build` lalu push ke repository. Panduan lebih lengkap ada di artikel [Membangun Blog Cepat dengan Astro di Termux](/wims-teknologi/posts/astro-termux/).
+
+### Kenapa hasil build tidak tampil stylenya?
+
+Biasanya karena nilai `base` di `astro.config.mjs` tidak sesuai nama repository atau subdomain tempat project di-host.
+
+### Apakah bisa memakai custom domain?
+
+Bisa. GitHub Pages mendukung custom domain melalui pengaturan di tab Pages, lalu tambahkan `domain` pada `astro.config.mjs` agar canonical dan sitemap mengikuti.
+
+## Kesimpulan
+
+Menerbitkan blog Astro ke GitHub Pages cukup mudah: atur `base` dengan benar, build project, lalu pilih antara GitHub Actions (otomatis) atau push manual ke branch `gh-pages`. Setelah online, fokus berikutnya adalah memastikan [sitemap, robots.txt](/wims-teknologi/posts/sitemap-dan-robots-txt-untuk-blog/), dan [meta tag Open Graph](/wims-teknologi/posts/open-graph-meta-tag-untuk-blog/) terpasang dengan benar agar blog lebih mudah ditemukan dan dibagikan.]]></content:encoded>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Cara Install Node.js di Termux]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/cara-install-nodejs-di-termux/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/cara-install-nodejs-di-termux/</guid>
+      <description><![CDATA[Node.js adalah fondasi untuk menjalankan framework seperti Astro dan Next.js di Termux. Berikut cara memasangnya, memeriksa versi, dan menangani masalah umum.]]></description>
+      <category><![CDATA[termux]]></category>
+      <category><![CDATA[nodejs]]></category>
+      <category><![CDATA[npm]]></category>
+      <content:encoded><![CDATA[Node.js memungkinkan menjalankan JavaScript di luar browser, termasuk framework web seperti Astro dan Next.js. Memasangnya di Termux cukup mudah, tetapi ada beberapa hal yang perlu diperhatikan agar semua berjalan lancar. Artikel ini menjelaskan cara install Node.js di Termux beserta masalah umum yang sering muncul.
+
+## Memasang Node.js
+
+Pertama, pastikan Termux dalam kondisi terbaru:
+
+```bash
+pkg update
+pkg upgrade
+```
+
+Lalu install Node.js dan npm (yang disertakan bersamanya):
+
+```bash
+pkg install nodejs
+```
+
+Periksa hasil instalasi:
+
+```bash
+node -v
+npm -v
+```
+
+Jika kedua perintah menampilkan versi, instalasi berhasil.
+
+## Memasang Versi Node Tertentu
+
+Repositori Termux menyediakan versi Node bawaan. Jika project membutuhkan versi tertentu, gunakan manajer versi:
+
+```bash
+pkg install nodejs-lts
+```
+
+Untuk pengaturan lebih fleksibel, `nvm` bisa dipakai mengelola beberapa versi secara paralel. Pilih versi sesuai kebutuhan project — periksa dokumentasi framework yang dipakai untuk melihat rentang versi Node yang didukung.
+
+## Menjalankan npm di Termux
+
+Setelah Node terpasang, framework bisa diinstall:
+
+```bash
+npm create astro@latest blog-saya -- --template minimal
+cd blog-saya
+npm install
+npm run dev
+```
+
+Bila perintah `npm` tidak ditemukan padahal Node terpasang, coba jalankan lewat jalur lengkap:
+
+```bash
+node node_modules/astro/astro.js dev
+```
+
+## Masalah Umum dan Solusinya
+
+Beberapa kendala yang sering muncul:
+
+- **Perintah tidak ditemukan** — pastikan package `nodejs` benar-benar terpasang dengan `pkg list-installed`.
+- **Biner tidak tersedia untuk arsitektur** — sebagian paket (seperti sharp atau modul SWC) tidak punya biner untuk arsitektur Android. Cari alternatif murni JavaScript atau pilih framework yang lebih ringan seperti Astro.
+- **Build terhenti karena memori** — Termux berjalan di perangkat dengan memori terbatas. Tutup aplikasi lain, atau naikkan limit memori Node saat build.
+- **`npm ci` gagal** — bersihkan cache dengan `npm cache clean --force` lalu ulangi instalasi.
+
+Detail soal paket biner dibahas lebih lanjut di [Kiat Menggunakan Termux untuk Pengembangan Web di Android](/wims-teknologi/posts/termux-tips/).
+
+## Setelah Node Terpasang
+
+Dengan Node.js aktif, Anda bisa mulai membangun project dan mengelola repositori. Pastikan juga sudah menyiapkan [Git dan GitHub di Termux](/wims-teknologi/posts/git-dan-github-di-termux/) agar project bisa disinkronkan. Untuk pemula, ikuti alur lengkap di [Cara Setup Termux untuk Pengembangan Web](/wims-teknologi/posts/cara-setup-termux-untuk-pengembangan-web/).
+
+## FAQ
+
+### Apakah `pkg install nodejs` cukup untuk semua framework?
+
+Belum tentu. Framework seperti Next.js membutuhkan versi Node tertentu. Periksa dokumentasi framework dan sesuaikan versi yang diinstall.
+
+### Apakah npm tersedia setelah install nodejs?
+
+Ya, npm disertakan dalam paket `nodejs` Termux.
+
+### Kenapa build gagal dengan error modul biner?
+
+Karena paket itu tidak menyediakan biner untuk arsitektur Android. Gunakan alternatif murni JavaScript atau turunkan versi paket.
+
+## Kesimpulan
+
+Memasang Node.js di Termux cukup sederhana: update paket, `pkg install nodejs`, lalu verifikasi dengan `node -v`. Kendala yang muncul biasanya seputar versi dan biner arsitektur. Setelah Node aktif, seluruh alur pengembangan web — dari membangun hingga menerbitkan blog — bisa dikerjakan langsung dari ponsel.]]></content:encoded>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Cara Membuat Daftar Isi Otomatis di Blog Astro]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/cara-membuat-daftar-isi-otomatis-di-astro/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/cara-membuat-daftar-isi-otomatis-di-astro/</guid>
+      <description><![CDATA[Daftar isi memudahkan pembaca menavigasi artikel panjang dan memberi peluang tampil di hasil pencarian. Berikut cara membuatnya otomatis di Astro.]]></description>
+      <category><![CDATA[astro]]></category>
+      <category><![CDATA[daftar-isi]]></category>
+      <category><![CDATA[toc]]></category>
+      <content:encoded><![CDATA[Artikel panjang yang terstruktur dengan heading baik, tetapi tanpa daftar isi pembaca harus menggulir untuk menemukan bagian yang dicari. Daftar isi (table of contents) memecahkan masalah ini dan memberi manfaat SEO tambahan. Artikel ini menjelaskan cara membuat daftar isi otomatis di blog Astro dari heading artikel.
+
+## Manfaat Daftar Isi
+
+Daftar isi memberi beberapa keuntungan:
+
+- **Navigasi cepat** — pembaca langsung melompat ke bagian yang dibutuhkan.
+- **Struktur visual** — menunjukkan cakupan topik sebelum membaca.
+- **SEO** — jika dijadikan tautan anchor, membantu mesin pencari memahami struktur heading.
+- **Featured snippet** — heading yang jelas meningkatkan peluang muncul di hasil pencarian.
+
+Blog Anda sendiri sudah memakai pola ini — perhatikan cara artikel menampilkan daftar bagian di awal.
+
+## Mengambil Heading dari Artikel
+
+Di Astro, fungsi `render` menyediakan data heading setiap artikel:
+
+```astro
+---
+import { getCollection, render } from 'astro:content';
+
+const { Content, headings } = await render(post);
+---
+```
+
+Variabel `headings` berisi array dengan `depth`, `slug`, dan `text`. Inilah bahan baku daftar isi.
+
+## Membuat Komponen Daftar Isi
+
+Buat komponen yang menerima headings dan merendernya sebagai tautan anchor:
+
+```astro
+---
+const { headings } = Astro.props;
+---
+
+<nav class="toc">
+  <strong>Daftar Isi</strong>
+  <ul>
+    {
+      headings.filter((h) => h.depth === 2 || h.depth === 3).map((h) => (
+        <li>
+          <a href={`#${h.slug}`}>{h.text}</a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
+```
+
+Tautan `#slug` mengarah ke heading dengan id yang sama di dalam artikel.
+
+## Memastikan Heading Punya ID
+
+Agar tautan anchor bekerja, setiap heading harus memiliki atribut `id` yang sesuai. Astro menghasilkan slug otomatis untuk heading dalam banyak konfigurasi. Bila belum ada, tambahkan id secara dinamis lewat sedikit JavaScript setelah halaman dirender, misalnya membuat id dari teks heading yang diubah menjadi lowercase dan mengganti spasi dengan tanda hubung.
+
+## Menyaring Tingkat Heading
+
+Tidak semua heading perlu masuk daftar isi. Filter yang umum:
+
+- **H2 dan H3** — cukup untuk sebagian besar artikel.
+- **Hanya H2** — untuk artikel pendek agar daftar tidak panjang.
+
+Memilih kedalaman yang tepat membuat daftar isi tetap ringkas. Struktur heading yang baik dibahas di [artikel menulis konten blog yang SEO-friendly](/wims-teknologi/posts/cara-menulis-konten-blog-seo-friendly/).
+
+## Daftar Isi dan SEO
+
+Daftar isi memperkuat sinyal struktur: heading ber-anchor menegaskan hierarki dan topik yang dicakup. Bila artikel panjang, ini membantu Google menilai kelengkapan — sejalan dengan prinsip [topical coverage lewat riset keyword](/wims-teknologi/posts/cara-riset-keyword-untuk-blog/).
+
+## FAQ
+
+### Apakah daftar isi wajib di semua artikel?
+
+Tidak wajib. Gunakan untuk artikel dengan beberapa bagian; untuk tulisan pendek justru mengganggu.
+
+### Apakah tautan daftar isi masuk ke sitemap?
+
+Tidak langsung. Tautan anchor adalah bagian dari halaman yang sama, bukan URL terpisah.
+
+### Bisakah daftar isi dibuat sticky?
+
+Bisa. Beri posisi fixed di sidebar untuk artikel panjang, tetapi pastikan tidak menutupi konten di layar kecil.
+
+## Kesimpulan
+
+Daftar isi otomatis di Astro mudah dibuat dari data `headings` yang disediakan `render`: filter H2/H3, render sebagai tautan anchor, dan pastikan heading punya id. Fitur kecil ini meningkatkan kenyamanan membaca sekaligus menegaskan struktur artikel di mata mesin pencari.]]></content:encoded>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Cara Membuat Dark Mode di Blog]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/cara-membuat-dark-mode-di-blog/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/cara-membuat-dark-mode-di-blog/</guid>
+      <description><![CDATA[Dark mode mengurangi silau dan disukai banyak pembaca. Berikut cara membuat toggle tema terang/gelap yang menghormati preferensi sistem.]]></description>
+      <category><![CDATA[dark-mode]]></category>
+      <category><![CDATA[frontend]]></category>
+      <category><![CDATA[css]]></category>
+      <content:encoded><![CDATA[Dark mode bukan lagi fitur bonus — banyak pembaca secara default memakai tema gelap. Menyediakan toggle yang menghormati preferensi sistem meningkatkan kenyamanan membaca blog Anda. Artikel ini menjelaskan cara membuat dark mode di blog dengan CSS dan sedikit JavaScript.
+
+## Pendekatan dengan CSS Custom Properties
+
+Cara paling mudah adalah mendefinisikan warna lewat custom properties, lalu menukar nilainya berdasarkan tema:
+
+```css
+:root {
+  --bg: #ffffff;
+  --text: #1a1a1a;
+}
+
+[data-theme="dark"] {
+  --bg: #111111;
+  --text: #f0f0f0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+```
+
+Dengan pola ini, seluruh komponen cukup memakai `var(--bg)` dan `var(--text)` — mengganti tema hanya mengubah satu atribut di `<html>`.
+
+## Toggle dengan JavaScript
+
+Tombol toggle cukup mengubah atribut dan menyimpan pilihan:
+
+```js
+const btn = document.getElementById('theme-toggle');
+const root = document.documentElement;
+
+btn.addEventListener('click', () => {
+  const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+  root.dataset.theme = next;
+  localStorage.setItem('theme', next);
+});
+```
+
+Penyimpanan di `localStorage` membuat pilihan pengguna bertahan di kunjungan berikutnya.
+
+## Menghormati Preferensi Sistem
+
+Gunakan media query `prefers-color-scheme` sebagai nilai awal saat pengguna belum pernah memilih:
+
+```js
+const saved = localStorage.getItem('theme');
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+const theme = saved || (prefersDark ? 'dark' : 'light');
+document.documentElement.dataset.theme = theme;
+```
+
+Idealnya skrip ini dijalankan sebelum halaman dirender (inline di `<head>`) agar tidak terjadi kilatan warna salah saat memuat.
+
+## Menghindari Flicker Saat Load
+
+Untuk mencegah tema yang salah tampil sekejap, terapkan tema sebelum konten dirender — misalnya lewat skrip kecil inline di `<head>` yang membaca `localStorage` dan mengatur atribut. Pola inilah yang dipakai banyak framework modern, termasuk [Astro](/wims-teknologi/posts/content-collections-astro/), karena mencegah layout shift visual.
+
+## Konsistensi dengan Gambar
+
+Perhatikan elemen non-CSS:
+
+- **Gambar** — gunakan format dengan transparansi atau siapkan versi gelap bila diperlukan.
+- **Kode blok** — pastikan sintaks berwarna kontras di kedua tema.
+- **SVG ikon** — pakai `currentColor` agar mengikuti warna teks.
+
+Periksa kontras warna di kedua tema agar tetap terbaca, karena kegelapan tidak boleh mengorbankan keterbacaan.
+
+## Tema dan Komponen Pihak Ketiga
+
+Layanan seperti sistem komentar biasanya menyediakan tema tersendiri. Untuk Giscus misalnya, gunakan `preferred_color_scheme` agar mengikuti tema blog. Integrasinya dibahas di [cara menambahkan komentar di blog Astro](/wims-teknologi/posts/cara-menambahkan-komentar-di-blog-astro/).
+
+## FAQ
+
+### Apakah dark mode memengaruhi SEO?
+
+Tidak langsung. Dampaknya pada pengalaman pengguna dan kenyamanan membaca, yang bisa menurunkan rasio pentalan.
+
+### Bagaimana jika pengguna memakai mode kontras tinggi?
+
+Bila memungkinkan, hormati juga `prefers-contrast` untuk aksesibilitas. Yang terpenting, pastikan kontras warna cukup di semua mode.
+
+### Perlukah gambar versi gelap?
+
+Hanya bila gambar berwarna terang yang besar menyilaukan. Sebagian besar blog cukup dengan ikon dan kode yang disesuaikan.
+
+## Kesimpulan
+
+Dark mode bisa dibangun hanya dengan CSS custom properties dan sedikit JavaScript: definisikan variabel warna per tema, tambahkan tombol toggle, simpan pilihan di `localStorage`, dan gunakan `prefers-color-scheme` sebagai default. Terapkan sebelum render untuk menghindari flicker, dan sesuaikan gambar serta komponen pihak ketiga agar kedua tema tetap nyaman dibaca.]]></content:encoded>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Cara Membuat Meta Description yang Menarik]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/cara-membuat-meta-description-yang-menarik/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/cara-membuat-meta-description-yang-menarik/</guid>
+      <description><![CDATA[Meta description menentukan apakah orang mengklik hasil pencarian Anda. Berikut cara menulis meta description yang jelas, relevan, dan mendorong klik.]]></description>
+      <category><![CDATA[seo]]></category>
+      <category><![CDATA[meta-description]]></category>
+      <category><![CDATA[on-page-seo]]></category>
+      <content:encoded><![CDATA[Meta description adalah teks singkat yang tampil di bawah judul pada hasil pencarian. Meskipun tidak menjadi faktor peringkat langsung, deskripsi yang baik menentukan rasio klik (CTR) — dan CTR yang tinggi berpengaruh pada performa pencarian Anda. Artikel ini menjelaskan cara membuat meta description yang menarik.
+
+## Apa yang Dilakukan Meta Description?
+
+Di hasil pencarian, meta description memberi ringkasan isi halaman. Google menampilkannya di bawah judul dan URL, dan biasanya memotong teks sekitar 150–160 karakter. Deskripsi yang jelas membantu pembaca memutuskan apakah hasil ini menjawab kebutuhannya.
+
+Meskipun Google bisa mengganti deskripsi yang Anda tulis dengan cuplikan lain, meta description tetap penting sebagai kendali atas pesan yang disampaikan.
+
+## Prinsip Menulis yang Baik
+
+Ikuti prinsip berikut:
+
+- **Tunjukkan manfaat** — jelaskan apa yang akan pembaca dapatkan.
+- **Sebutkan keyword secara alami** — cocokkan dengan yang dicari pengguna.
+- **Sertakan ajakan bertindak** — misalnya "pelajari", "cari tahu", "ikuti langkahnya".
+- **Ringkas** — tulis dalam 150–160 karakter agar tidak terpotong.
+- **Sesuaikan dengan intent** — hasil tutorial perlu pendekatan berbeda dari perbandingan.
+
+Contoh deskripsi untuk tutorial:
+
+> Belum pernah deploy blog? Panduan ini menjelaskan langkah demi langkah menerbitkan blog Astro ke GitHub Pages secara gratis.
+
+## Contoh Baik dan Buruk
+
+Bandingkan dua pendekatan:
+
+- **Buruk:** "Artikel tentang deploy blog astro ke github pages yang membahas cara deploy astro blog dan github pages deploy." — pengulangan keyword tanpa manfaat.
+- **Baik:** "Terbitkan blog Astro Anda di GitHub Pages tanpa biaya: pengaturan base URL, build, dan deployment otomatis dijelaskan lengkap."
+
+Deskripsi yang baik memberi informasi, bukan sekadar mengulang judul.
+
+## Menulis untuk Featured Snippet
+
+Untuk pertanyaan seperti "apa itu canonical URL", tampilkan jawaban langsung di awal deskripsi:
+
+> Canonical URL menetapkan versi resmi sebuah halaman agar Google tidak menganggapnya duplikat. Pelajari cara memasangnya di blog.
+
+Jawaban singkat dan padat memberi peluang tampil sebagai cuplikan unggulan sekaligus mendorong klik.
+
+## Menempatkan Meta Description di Astro
+
+Di Astro, deskripsi diambil dari frontmatter lalu dirender di layout:
+
+```astro
+<meta name="description" content={description} />
+```
+
+Pastikan setiap halaman punya deskripsi unik — jangan memakai satu deskripsi untuk seluruh situs. Karena itu, isi field `excerpt` atau deskripsi pada setiap artikel secara spesifik. Proses menulis artikel secara menyeluruh dijelaskan di [artikel menulis konten blog yang SEO-friendly](/wims-teknologi/posts/cara-menulis-konten-blog-seo-friendly/).
+
+## Memeriksa Tampilan
+
+Gunakan alat pemeriksa SERP untuk melihat bagaimana judul, URL, dan deskripsi tampil berdampingan di hasil pencarian. Ini membantu mengecek apakah deskripsi terpotong atau tidak menarik.
+
+## FAQ
+
+### Apakah meta description berpengaruh pada peringkat?
+
+Secara tidak langsung. Deskripsi tidak menjadi sinyal peringkat langsung, tetapi CTR yang dipengaruhinya berdampak pada kinerja pencarian.
+
+### Berapa panjang idealnya?
+
+Sekitar 150–160 karakter untuk Google. Lebih panjang berisiko terpotong.
+
+### Apakah Google selalu memakai meta description saya?
+
+Tidak selalu. Google bisa memilih cuplikan lain jika dinilai lebih relevan dengan query.
+
+## Kesimpulan
+
+Meta description yang menarik ringkas, menonjolkan manfaat, memakai keyword secara alami, dan sesuai intent pencarian. Tulis unik untuk setiap halaman, cek tampilannya di SERP, dan perbarui bila perlu. Ini bagian kecil dari [on-page SEO](/wims-teknologi/posts/seo-untuk-situs-astro/) yang berdampak besar pada klik.]]></content:encoded>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Cara Mempercepat Blog Statis]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/cara-mempercepat-blog-statis/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/cara-mempercepat-blog-statis/</guid>
+      <description><![CDATA[Blog statis sudah cepat, tetapi masih bisa dioptimalkan: kompresi gambar, minimalkan JavaScript, dan perhatikan font. Berikut langkah praktisnya.]]></description>
+      <category><![CDATA[performa]]></category>
+      <category><![CDATA[seo]]></category>
+      <category><![CDATA[optimasi]]></category>
+      <content:encoded><![CDATA[Blog statis seperti hasil static site generator sudah punya fondasi cepat karena HTML dikirim tanpa proses server. Namun kecepatan masih bisa ditingkatkan, dan setiap detik yang dihemat memperbaiki pengalaman pembaca serta SEO. Artikel ini membahas cara mempercepat blog statis secara praktis.
+
+## Kompresi dan Ukuran Gambar
+
+Gambar biasanya menyumbang bobot halaman terbesar. Beberapa langkah yang berdampak besar:
+
+- **Ubah ukuran gambar** — sesuaikan dimensi dengan tempat tampil, jangan unggah gambar besar lalu dikecilkan lewat CSS.
+- **Gunakan format modern** — format terkompresi seperti WebP dan AVIF jauh lebih ringan dari JPG atau PNG.
+- **Set atribut lebar dan tinggi** — mencegah layout shift, yang juga berpengaruh pada skor Core Web Vitals.
+- **Manfaatkan lazy loading** — gambar di bawah layar dimuat saat mendekati tampilan.
+
+Untuk blog Astro, optimasi gambar bisa diotomatiskan dengan komponen `Image` — lihat [cara mengoptimasi gambar di Astro](/wims-teknologi/posts/cara-mengoptimasi-gambar-di-astro/).
+
+## Minimalkan JavaScript
+
+Setiap kilobyte JavaScript memperlambat render dan interaksi. Idealnya:
+
+- **Hanya muat skrip yang diperlukan** — skrip analitik atau komentar boleh dimuat setelah konten tampil.
+- **Hindari skrip besar di halaman artikel** — framework seperti Astro membantu karena tidak mengirim JavaScript default.
+- **Gunakan atribut defer atau async** — agar skrip tidak memblokir render halaman.
+
+## Perhatikan Font
+
+Font adalah penyebab lambat yang sering terlewat:
+
+- **Batasi jumlah varian font** — cukup regular dan bold untuk membaca.
+- **Gunakan subset font** — hanya karakter yang dibutuhkan bahasa konten.
+- **Preload font penting** — agar teks tidak menunggu font dimuat.
+- **Jaga konsistensi ukuran fallback** — mencegah teks melompat saat font asli dimuat.
+
+## Aktifkan Cache dan Kompresi
+
+Hosting statis biasanya sudah menangani kompresi gzip atau brotli. Pastikan:
+
+- **Header cache** diatur untuk aset statis seperti gambar dan CSS.
+- **CDN dipakai** bila audiens tersebar jauh dari server asal.
+
+GitHub Pages menerapkan cache dan kompresi otomatis, sehingga blog statis di sana sudah terbantu secara default.
+
+## Kurangi Pustaka Pihak Ketiga
+
+Setiap embed — pemutar video, widget, atau iklan — menambah permintaan jaringan. Timbang manfaatnya: embed yang tidak penting memperlambat halaman dan memperbesar layout shift. Jika memungkinkan, tampilkan tautan atau gambar pratinjau alih-alih embed langsung.
+
+## Ukur dan Bandingkan
+
+Sebelum dan sesudah optimasi, ukur dengan:
+
+- **PageSpeed Insights** — skor dan rekomendasi untuk LCP, INP, dan CLS.
+- **DevTools → Network** — melihat bobot dan jumlah permintaan.
+
+Fokus pada perbaikan yang paling berdampak, bukan menghabiskan waktu pada detail kecil. Hubungan metrik ini dengan peringkat dijelaskan di [artikel Core Web Vitals untuk blog](/wims-teknologi/posts/core-web-vitals-untuk-blog/).
+
+## FAQ
+
+### Apakah blog statis selalu lebih cepat dari blog dinamis?
+
+Umumnya ya, karena tidak ada proses server saat halaman diminta. Namun gambar besar dan font berat tetap bisa memperlambat blog statis.
+
+### Apa langkah paling berdampak pertama kali?
+
+Kompresi gambar adalah yang paling sering memberi peningkatan terbesar pada bobot halaman dan LCP.
+
+### Apakah mengoptimasi gambar memengaruhi kualitas visual?
+
+Sedikit, bila format dan kualitas dipilih dengan bijak. WebP dengan kualitas 80 persen biasanya nyaris tidak terlihat bedanya.
+
+## Kesimpulan
+
+Mempercepat blog statis berpusat pada tiga hal: gambar ringan, JavaScript minimal, dan font yang efisien. Cache dan CDN membantu lebih lanjut, sementara pengukuran dengan PageSpeed Insights memastikan perbaikan benar-benar berdampak. Hasilnya, blog yang cepat — dan itu bagian dari [fondasi SEO](/wims-teknologi/posts/seo-basics/) yang baik.]]></content:encoded>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Cara Menambahkan Sistem Komentar di Blog Astro]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/cara-menambahkan-komentar-di-blog-astro/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/cara-menambahkan-komentar-di-blog-astro/</guid>
+      <description><![CDATA[Blog statis tidak punya server untuk komentar. Giscus memanfaatkan diskusi GitHub sebagai backend. Berikut cara memasangnya di Astro.]]></description>
+      <category><![CDATA[astro]]></category>
+      <category><![CDATA[komentar]]></category>
+      <category><![CDATA[giscus]]></category>
+      <content:encoded><![CDATA[Blog statis tidak memiliki database server, sehingga komentar tidak bisa disimpan seperti di blog dinamis. Solusinya: memakai layanan pihak ketiga. Giscus menjadi pilihan populer karena memanfaatkan GitHub Discussions sebagai backend — gratis, tanpa iklan, dan data tersimpan di repository Anda. Artikel ini menjelaskan cara menambahkan sistem komentar di blog Astro dengan Giscus.
+
+## Pilihan Layanan Komentar
+
+Beberapa opsi umum:
+
+- **Giscus** — berbasis GitHub Discussions, gratis, ringan.
+- **Utterances** — mirip, berbasis GitHub Issues.
+- **Disqus** — fitur lengkap, tetapi beriklan dan membebani halaman.
+
+Untuk blog di GitHub Pages, Giscus adalah pilihan yang paling alami karena seluruh ekosistemnya sudah berada di GitHub.
+
+## Aktifkan GitHub Discussions
+
+Giscus membutuhkan repository dengan fitur Discussions aktif:
+
+1. Buka repository di GitHub.
+2. Masuk ke **Settings → General → Features**.
+3. Centang **Discussions** dan simpan.
+
+Tanpa langkah ini, Giscus tidak bisa menyimpan komentar.
+
+## Atur Konfigurasi Giscus
+
+Buka aplikasi Giscus di situs resminya, pilih repository, dan atur kategori *announcement* (dibuat otomatis oleh Giscus). Aplikasi akan menghasilkan snippet dengan parameter seperti `data-repo`, `data-repo-id`, `data-category`, dan `data-category-id`.
+
+Salah satu konsep penting adalah **mapping**:
+
+- **Pathname** — setiap halaman mendapat thread komentar sendiri berdasarkan URL.
+- **Specific term** — semua halaman berbagi satu thread (jarang dipakai).
+- **Og:title atau lainnya** — cocokkan berdasar atribut lain.
+
+`pathname` adalah pilihan paling praktis untuk blog.
+
+## Membuat Komponen Giscus di Astro
+
+Buat komponen, misalnya `src/components/Giscus.astro`:
+
+```astro
+---
+const { slug } = Astro.props;
+const url = `https://contoh.com/posts/${slug}/`;
+---
+
+<section class="comments">
+  <h2>Komentar</h2>
+  <script is:inline src="https://giscus.app/client.js"
+    data-repo="username/repository"
+    data-repo-id="..."
+    data-category="Announcements"
+    data-category-id="..."
+    data-mapping="specific"
+    data-term={url}
+    data-theme="preferred_color_scheme"
+    data-loading="lazy"
+    async>
+  </script>
+</section>
+```
+
+Perhatikan penggunaan `data-mapping="specific"` dengan `data-term` berisi URL artikel — ini memastikan setiap artikel punya thread tersendiri, tidak tergantung pada struktur URL yang mungkin berubah.
+
+Lalu panggil komponen di halaman artikel:
+
+```astro
+<Giscus slug={post.slug} />
+```
+
+## Mengoptimalkan Tema dan Kinerja
+
+Giscus mendukung tema sesuai preferensi pengguna (`preferred_color_scheme`) yang cocok untuk blog dengan [mode gelap](/wims-teknologi/posts/cara-membuat-dark-mode-di-blog/). Untuk kinerja, gunakan `data-loading="lazy"` agar skrip hanya dimuat saat pengguna mendekati area komentar — sejalan dengan prinsip meminimalkan beban di [artikel mempercepat blog statis](/wims-teknologi/posts/cara-mempercepat-blog-statis/).
+
+## Hubungan dengan SEO
+
+Komentar menambah konten unik di setiap halaman dan bisa memperpanjang waktu kunjungan pembaca. Pastikan area komentar ikut terindeks dan halaman [sitemap dan robots.txt](/wims-teknologi/posts/sitemap-dan-robots-txt-untuk-blog/) tetap memuat semua artikel.
+
+## FAQ
+
+### Apakah Giscus benar-benar gratis?
+
+Ya. Giscus memakai GitHub Discussions yang tersedia gratis pada repository publik.
+
+### Apakah komentar bisa moderasi?
+
+Bisa. Karena berbasis GitHub Discussions, moderasi dilakukan lewat pengaturan repository, termasuk siapa yang boleh berkomentar.
+
+### Apakah pembaca perlu akun GitHub untuk berkomentar?
+
+Ya, Giscus mewajibkan login GitHub untuk berkomentar. Ini pertimbangan penting bila audiens Anda tidak terbiasa dengan GitHub.
+
+## Kesimpulan
+
+Menambahkan sistem komentar di blog Astro mudah dengan Giscus: aktifkan GitHub Discussions, dapatkan konfigurasi dari aplikasi Giscus, lalu pasang sebagai komponen di halaman artikel. Dengan `data-mapping="specific"` dan loading lazy, komentar berfungsi baik tanpa memperlambat blog statis Anda.]]></content:encoded>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Cara Mengoptimasi Gambar di Astro]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/cara-mengoptimasi-gambar-di-astro/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/cara-mengoptimasi-gambar-di-astro/</guid>
+      <description><![CDATA[Gambar adalah bobot terbesar halaman. Astro menyediakan komponen Image untuk resizing, format modern, dan lazy loading. Berikut cara menggunakannya.]]></description>
+      <category><![CDATA[astro]]></category>
+      <category><![CDATA[gambar]]></category>
+      <category><![CDATA[optimasi]]></category>
+      <category><![CDATA[performa]]></category>
+      <content:encoded><![CDATA[Gambar menyumbang sebagian besar bobot sebuah halaman, dan blog biasanya penuh gambar. Astro menyediakan komponen `Image` yang mengotomatiskan optimasi: menyesuaikan ukuran, mengubah format, dan menerapkan lazy loading. Artikel ini menjelaskan cara mengoptimasi gambar di Astro agar blog tetap cepat.
+
+## Komponen Image di Astro
+
+Komponen `Image` adalah cara termudah untuk optimasi. Contoh penggunaannya:
+
+```astro
+---
+import { Image } from 'astro:assets';
+import artikelGambar from '../assets/artikel.png';
+---
+
+<Image src={artikelGambar} alt="Ilustrasi artikel" width={800} height={450} />
+```
+
+Komponen ini menghasilkan gambar dengan dimensi dan format yang dioptimalkan saat build.
+
+## Manfaat yang Didapat Otomatis
+
+Dengan komponen `Image`, Anda memperoleh:
+
+- **Resizing** — gambar disesuaikan dengan dimensi yang diminta.
+- **Format modern** — output dalam format terkompresi seperti WebP bila browser mendukung.
+- **Atribut lebar/tinggi** — mencegah layout shift, mendukung skor Core Web Vitals yang baik.
+- **Lazy loading** — gambar di bawah layar dimuat belakangan secara default.
+
+Semua ini otomatis, tanpa menulis kode tambahan.
+
+## Gambar Responsif dengan Sizes
+
+Untuk gambar yang menyesuaikan layar, kombinasikan atribut `sizes` dengan breakpoint:
+
+```astro
+<Image
+  src={artikelGambar}
+  alt="Gambar responsif"
+  widths={[480, 768, 1200]}
+  sizes="(max-width: 768px) 100vw, 768px"
+/>
+```
+
+Astro menghasilkan beberapa versi ukuran, dan browser memilih yang paling sesuai dengan layar pengunjung. Ini mengurangi pengunduhan gambar yang lebih besar dari kebutuhan.
+
+## Menentukan Kualitas Output
+
+Astro menyediakan opsi kualitas:
+
+```astro
+<Image src={artikelGambar} alt="Foto" width={800} quality={80} />
+```
+
+Nilai kualitas 75–85 umumnya memberi keseimbangan terbaik antara bobot dan tampilan. Menurunkan kualitas dari 100 ke 80 bisa mengurangi ukuran file secara signifikan tanpa perbedaan visual yang jelas.
+
+## Mengoptimasi Gambar di Markdown
+
+Untuk gambar yang ditulis langsung di artikel markdown, komponen `Image` tidak tersedia langsung. Alternatifnya:
+
+- **Optimasi manual dulu** — gunakan tool kompresi sebelum mengunggah, lalu set dimensi di markdown.
+- **Komponen custom** — buat komponen pendek yang membungkus `Image` dan pakai di MDX.
+
+Apa pun caranya, prinsipnya sama: ukuran tepat, format modern, dan dimensi ditetapkan agar tidak bergeser.
+
+## Hubungan dengan Performa Blog
+
+Optimasi gambar berdampak langsung pada LCP — metrik terbesar di [Core Web Vitals](/wims-teknologi/posts/core-web-vitals-untuk-blog/). Gabungkan dengan prinsip lain seperti meminimalkan JavaScript dan font yang efisien untuk hasil maksimal, seperti dibahas di [artikel mempercepat blog statis](/wims-teknologi/posts/cara-mempercepat-blog-statis/).
+
+## FAQ
+
+### Apakah komponen Image tersedia di semua proyek Astro?
+
+Komponen `astro:assets` membutuhkan konfigurasi adapter dan dukungan build. Periksa versi Astro yang dipakai; untuk versi tertentu bisa memakai integrasi gambar.
+
+### Apakah WebP otomatis dipakai?
+
+Bila didukung, Astro menghasilkan format modern secara otomatis melalui komponen Image.
+
+### Apa itu alt text dan kenapa penting?
+
+Alt text menjelaskan isi gambar bagi pembaca dengan screen reader dan memberi konteks tambahan bagi mesin pencari. Selalu isi `alt` dengan deskripsi yang bermakna.
+
+## Kesimpulan
+
+Mengoptimasi gambar di Astro sangat mudah lewat komponen `Image`: ukuran otomatis, format modern, lazy loading, dan dimensi tetap — semua menunjang performa tanpa kerja manual berlebihan. Untuk gambar di markdown, kompresi manual dengan ukuran tepat tetap diperlukan. Hasilnya, halaman blog lebih ringan dan pembaca tidak menunggu lama.]]></content:encoded>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Cara Menulis Konten Blog yang SEO-Friendly]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/cara-menulis-konten-blog-seo-friendly/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/cara-menulis-konten-blog-seo-friendly/</guid>
+      <description><![CDATA[Konten yang baik menjawab kebutuhan pembaca sekaligus mudah dipahami mesin pencari. Berikut praktik menulis artikel blog yang SEO-friendly.]]></description>
+      <category><![CDATA[seo]]></category>
+      <category><![CDATA[content-writing]]></category>
+      <category><![CDATA[on-page-seo]]></category>
+      <content:encoded><![CDATA[Menulis konten blog yang SEO-friendly bukan berarti menjejalkan keyword. Tujuannya satu: menjawab apa yang dicari pembaca dengan cara yang juga mudah dipahami mesin pencari. Artikel ini merangkum praktik menulis yang paling berpengaruh.
+
+## Mulai dari Search Intent
+
+Sebelum menulis, pahami alasan orang mencari keyword tersebut. Apakah mereka ingin tahu, ingin membandingkan, atau ingin melakukan sesuatu? Judul dan struktur harus langsung selaras dengan maksud itu.
+
+Riset keyword yang benar membantu memastikan topik memang dicari orang — caranya dijelaskan di [artikel riset keyword untuk blog](/wims-teknologi/posts/cara-riset-keyword-untuk-blog/).
+
+## Tulis Judul dan Pembuka yang Jelas
+
+H1 dan paragraf pertama adalah bagian paling penting. Judul harus menggambarkan isi secara akurat, dan pembuka langsung menjawab masalah pembaca — bukan pemanasan yang bertele-tele.
+
+## Gunakan Struktur Heading yang Logis
+
+Pecah tulisan menjadi bagian dengan H2 dan H3 yang informatif:
+
+- H2 untuk bagian besar — jawaban inti.
+- H3 untuk detail di dalam bagian.
+
+Struktur yang rapi membantu pembaca memindai dan membantu Google memahami topik halaman. Untuk pertanyaan spesifik, jawab langsung setelah heading — pola ini juga berpeluang tampil sebagai featured snippet.
+
+## Tempatkan Keyword Secara Alami
+
+Gunakan primary keyword pada beberapa lokasi penting:
+
+- Judul (H1) dan SEO title
+- Paragraf pembuka
+- Satu atau dua heading bila natural
+- Beberapa kali di body
+- Meta description
+
+Jangan memaksakan. Variasikan dengan sinonim dan frasa terkait, karena [keyword stuffing](/wims-teknologi/posts/cara-riset-keyword-untuk-blog/) justru merusak kualitas. Lebih penting bahas topik secara tuntas.
+
+## Hubungkan dengan Artikel Lain
+
+Sertakan tautan ke artikel terkait untuk membantu navigasi dan memperkuat topik. Tautan harus relevan dengan konteks kalimat, seperti yang dijelaskan di [panduan internal linking untuk blog](/wims-teknologi/posts/internal-linking-untuk-blog/).
+
+## Tulis untuk Orang, Bukan Mesin
+
+Paragraf pendek, kalimat jelas, dan contoh konkret membuat artikel enak dibaca. Hindari pengulangan demi memperpanjang tulisan, dan jangan menambahkan bagian yang tidak memberi nilai.
+
+## Jangan Mengarang Fakta
+
+Untuk statistik, harga, atau klaim, gunakan sumber yang benar-benar dapat diverifikasi. Artikel yang mengarang data merusak kepercayaan dan berisiko dihukum Google. Bila data tidak tersedia, jelaskan secara kualitatif.
+
+## Siapkan Meta dan Struktur Pendukung
+
+Sebelum terbit, pastikan:
+
+- Meta title dan meta description unik dan menggambarkan isi.
+- Slug pendek dan deskriptif.
+- Gambar punya deskripsi alt yang menjelaskan isinya.
+- [Sitemap dan robots.txt](/wims-teknologi/posts/sitemap-dan-robots-txt-untuk-blog/) sudah mencakup halaman.
+
+## FAQ
+
+### Berapa panjang artikel yang ideal?
+
+Tidak ada angka pasti. Panjang mengikuti kedalaman yang dibutuhkan untuk menjawab intent dengan tuntas — bukan mengejar jumlah kata.
+
+### Apakah pengulangan keyword membantu peringkat?
+
+Tidak. Pengulangan berlebihan (keyword stuffing) merusak pengalaman baca dan bisa dianggap spam.
+
+### Haruskah menambahkan FAQ di setiap artikel?
+
+Tambahkan FAQ hanya jika pertanyaannya benar-benar lanjutan dari topik dan belum dijawab jelas di body.
+
+## Kesimpulan
+
+Menulis konten blog yang SEO-friendly dimulai dari memahami search intent, lalu menyusun tulisan dengan judul jelas, heading logis, keyword natural, dan tautan kontekstual. Yang terpenting: konten yang membantu pembaca selalu menjadi fondasi terbaik SEO — seperti yang juga ditegaskan di [SEO Dasar untuk Blog Modern](/wims-teknologi/posts/seo-basics/).]]></content:encoded>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Cara Riset Keyword untuk Blog (Panduan Praktis)]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/cara-riset-keyword-untuk-blog/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/cara-riset-keyword-untuk-blog/</guid>
+      <description><![CDATA[Riset keyword bukan sekadar mencari kata dengan volume besar. Pelajari cara menemukan keyword yang relevan, memahami search intent, dan membangun topical authority.]]></description>
+      <category><![CDATA[seo]]></category>
+      <category><![CDATA[riset-keyword]]></category>
+      <category><![CDATA[content-strategy]]></category>
+      <content:encoded><![CDATA[Riset keyword adalah fondasi dari setiap blog yang ingin ditemukan di mesin pencari. Sayangnya, banyak yang salah memulai dengan memburu kata bervolume besar tanpa melihat relevansi dan maksud pengguna. Artikel ini membahas cara riset keyword untuk blog secara praktis: dari menemukan ide, memahami search intent, hingga menyusunnya menjadi struktur yang saling menguatkan.
+
+## Mulai dari Topik, Bukan Sekadar Kata
+
+Tuliskan topik-topik yang benar-benar dikuasai dan sesuai dengan niche blog. Dari satu topik, turunkan menjadi banyak pertanyaan dan variasi kata yang mungkin diketik pembaca.
+
+Contoh dari niche blog pengembangan web:
+
+- Cara membuat blog statis
+- Framework apa yang cocok untuk blog
+- Cara menghosting blog tanpa biaya
+
+Satu topik inti seharusnya bisa melahirkan puluhan kandidat keyword.
+
+## Kenali Search Intent Sebelum Menulis
+
+Search intent adalah alasan di balik sebuah pencarian. Keyword dengan kata yang hampir sama bisa memiliki intent yang berbeda:
+
+- **Informational** — pembaca ingin tahu, misalnya "apa itu static site generator".
+- **Transactional** — pembaca ingin melakukan sesuatu, misalnya "deploy astro ke github pages".
+- **Commercial** — pembaca membandingkan sebelum memutuskan, misalnya "astro vs next.js untuk blog".
+
+Jika intent sudah dikuasai artikel lain, jangan buat artikel baru yang menjawab hal yang sama. Itu hanya menciptakan [keyword cannibalization](/wims-teknologi/posts/keyword-cannibalization-untuk-blog/) yang justru melemahkan peringkat.
+
+## Kumpulkan Kandidat dari Banyak Sumber
+
+Gunakan kombinasi sumber berikut, tanpa perlu tools berbayar:
+
+1. **Google Suggest** — ketik sebagian kata dan catat saran yang muncul.
+2. **Pencarian Terkait** — bagian "orang juga bertanya" dan "pencarian terkait" di bawah hasil Google.
+3. **Dari konten yang sudah ada** — lihat pertanyaan pembaca atau komentar di artikel lama.
+4. **Autocomplete** — saran dari YouTube, TikTok, atau forum seperti Reddit.
+
+Bila memakai tools seperti Google Keyword Planner atau Ahrefs, catat volumenya. Jika tidak ada tools, jangan mengarang angka volume. Cukup tandai dengan label relatif seperti *Estimated Priority* dan *Relative Competition*.
+
+## Kelompokkan Menjadi Topical Cluster
+
+Jangan biarkan keyword berdiri sendiri. Susun dalam struktur pillar dan cluster:
+
+```text
+Pillar: Panduan SEO untuk Blog
+├── Cluster Riset Keyword
+│   ├── cara riset keyword untuk blog
+│   └── cara menemukan ide konten
+├── Cluster Technical SEO
+│   ├── sitemap dan robots.txt untuk blog
+│   └── open graph meta tag untuk blog
+└── Cluster Performa
+    ├── core web vitals untuk blog
+    └── cara mempercepat blog statis
+```
+
+Cluster yang baik memungkinkan [internal linking yang natural](/wims-teknologi/posts/internal-linking-untuk-blog/) antar artikel dan memperkuat otoritas topik di mata Google. Artikel [SEO Dasar untuk Blog Modern](/wims-teknologi/posts/seo-basics/) adalah contoh pillar yang bisa dikembangkan menjadi banyak cluster seperti ini.
+
+## Gabungkan Keyword yang Mirip
+
+Beberapa keyword serupa sering kali lebih baik disatukan menjadi satu artikel yang kuat daripada dipecah menjadi beberapa artikel tipis. Contoh:
+
+- "sitemap untuk blog" dan "cara membuat robots.txt" → satu artikel teknis tentang keduanya.
+- "meta title blog" dan "meta description blog" → satu artikel on-page SEO.
+
+Satu artikel padat untuk satu search intent selalu lebih baik daripada lima artikel dangkal yang saling berebut peringkat.
+
+## Tentukan Prioritas dan SEO Brief
+
+Beri peringkat pada setiap keyword berdasarkan relevansi niche, peluang membangun otoritas, dan kekuatan search intent:
+
+- **P1** — sangat penting, ditulis paling dulu.
+- **P2** — penting, pelengkap otoritas.
+- **P3** — pendukung, long-tail.
+
+Sebelum menulis, buat brief singkat berisi keyword utama, secondary keyword, H1, slug, outline H2/H3, dan internal link target. Dengan brief, artikel tidak melenceng dari maksud pengguna.
+
+## FAQ
+
+### Berapa banyak keyword yang harus ditarget per artikel?
+
+Fokus pada satu primary keyword dan beberapa secondary keyword yang masih satu topik. Hindari keyword stuffing; gunakan variasi kata secara alami.
+
+### Apakah blog kecil bisa bersaing di keyword populer?
+
+Bisa, tapi lebih realistis memulai dari long-tail keyword yang spesifik dan relevan dengan niche. Otoritas dibangun perlahan lewat konsistensi.
+
+### Apa bedanya topical authority dan keyword density?
+
+Topical authority adalah kedalaman dan kelengkapan pembahasan suatu topik, sementara keyword density hanya menghitung kemunculan kata. Google menilai kelengkapan topik, bukan sekadar pengulangan kata.
+
+## Kesimpulan
+
+Riset keyword untuk blog dimulai dari topik yang dikuasai, lalu diturunkan menjadi kandidat keyword dengan search intent yang jelas. Kelompokkan dalam topical cluster, gabungkan yang saling tumpang tindih, dan prioritaskan sebelum menulis. Dengan pendekatan ini, setiap artikel punya alasan SEO yang jelas dan saling memperkuat — bukan sekadar menumpuk kata kunci.]]></content:encoded>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Cara Setup Termux untuk Pengembangan Web]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/cara-setup-termux-untuk-pengembangan-web/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/cara-setup-termux-untuk-pengembangan-web/</guid>
+      <description><![CDATA[Langkah demi langkah menyiapkan Termux di Android sebagai lingkungan pengembangan web: update paket, install Node.js dan Git, hingga mengakses penyimpanan.]]></description>
+      <category><![CDATA[termux]]></category>
+      <category><![CDATA[android]]></category>
+      <category><![CDATA[setup]]></category>
+      <category><![CDATA[pengembangan-web]]></category>
+      <content:encoded><![CDATA[Termux mengubah ponsel Android menjadi terminal Linux yang bisa digunakan untuk coding serius, termasuk membangun dan me-*build* blog. Namun bagi pemula, langkah awal sering terasa membingungkan. Artikel ini memandu cara setup Termux untuk pengembangan web dari awal, termasuk paket wajib dan izin penyimpanan.
+
+## Instal Termux di Android
+
+Termux tidak tersedia di Google Play Store resmi. Unduh aplikasi dari repositori resmi di F-Droid atau dari GitHub Termux, lalu izinkan instalasi dari sumber tidak dikenal saat diminta.
+
+Pastikan Anda mendapatkan versi terbaru. Versi lama dari toko pihak ketiga sering sudah usang dan tidak kompatibel dengan repositori paket saat ini.
+
+## Update Paket Awal
+
+Setelah terbuka, terminal menampilkan prompt `$`. Jalankan update untuk memastikan daftar paket dan sistem dalam kondisi terbaru:
+
+```bash
+pkg update
+pkg upgrade
+```
+
+Jalankan keduanya secara rutin, karena repositori Termux berkembang cepat. Jika diminta konfirmasi, tekan `y` dan Enter.
+
+## Beri Akses Penyimpanan
+
+Untuk mengakses folder seperti `Download`, jalankan:
+
+```bash
+termux-setup-storage
+```
+
+Perintah ini membuat folder `~/storage` yang berisi symlink ke direktori penyimpanan ponsel, misalnya `~/storage/downloads`. Izin penyimpanan juga perlu diberikan lewat dialog Android. Detail lengkapnya dijelaskan di [artikel cara akses penyimpanan di Termux](/wims-teknologi/posts/cara-akses-penyimpanan-di-termux/).
+
+Dengan ini, project bisa dikerjakan di folder biasa dan disimpan ke penyimpanan internal. Tips selengkapnya tentang manajemen penyimpanan ada di artikel [Kiat Menggunakan Termux untuk Pengembangan Web di Android](/wims-teknologi/posts/termux-tips/).
+
+## Install Paket untuk Pengembangan Web
+
+Paket inti yang paling sering dibutuhkan:
+
+```bash
+pkg install nodejs git openssh python
+```
+
+- **nodejs** — menjalankan JavaScript, npm, dan framework seperti Astro atau Next.js.
+- **git** — kontrol versi dan kolaborasi lewat GitHub.
+- **openssh** — koneksi aman dan push ke GitHub memakai SSH.
+- **python** — untuk skrip atau tool tambahan bila diperlukan.
+
+Beberapa paket yang belum terpasang bisa dicari dengan `pkg search nama`.
+
+## Buat Project Pertama
+
+Untuk memastikan semuanya berfungsi, buat project Astro sederhana:
+
+```bash
+npm create astro@latest blog-saya -- --template minimal
+cd blog-saya
+npm install
+npm run dev
+```
+
+Jika skrip `npm` tidak tersedia di PATH, jalankan langsung lewat Node:
+
+```bash
+node node_modules/astro/astro.js dev
+```
+
+Framework statis seperti Astro cocok untuk Termux karena build-nya ringan dan hasilnya bisa langsung di-upload ke GitHub Pages. Detail pembangunannya dijelaskan di [Membangun Blog Cepat dengan Astro di Termux](/wims-teknologi/posts/astro-termux/).
+
+## Konfigurasi Git dan SSH
+
+Agar bisa push ke GitHub, atur identitas dan buat SSH key:
+
+```bash
+git config --global user.name "Nama Anda"
+git config --global user.email "email@contoh.com"
+ssh-keygen -t ed25519 -C "email@contoh.com"
+```
+
+Lalu salin isi file `~/.ssh/id_ed25519.pub` ke **GitHub → Settings → SSH and GPG keys**. Setelah itu remote GitHub bisa dipakai tanpa memasukkan password berulang kali. Panduan menyeluruh untuk clone, commit, dan push ada di artikel [Menggunakan Git dan GitHub di Termux](/wims-teknologi/posts/git-dan-github-di-termux/).
+
+## FAQ
+
+### Apakah Termux membutuhkan root?
+
+Tidak. Termux berjalan sebagai aplikasi biasa dan tidak memerlukan akses root.
+
+### Kenapa `pkg` tidak ditemukan?
+
+Kemungkinan Anda menggunakan versi Termux yang sudah usang. Update aplikasi dari F-Droid atau GitHub, lalu jalankan `pkg update` lagi.
+
+### Bisakah Node.js versi terbaru diinstall di Termux?
+
+Biasanya bisa lewat repositori resmi. Bila framework yang dipakai butuh versi tertentu, pastikan mencocokkan dengan versi Node yang tersedia lewat `node -v`.
+
+## Kesimpulan
+
+Setup Termux untuk pengembangan web hanya butuh beberapa langkah: pasang aplikasi versi terbaru, update paket, beri izin penyimpanan, lalu install `nodejs`, `git`, dan `openssh`. Setelah itu Anda bisa membangun project, mengelola versi, dan menerbitkan blog langsung dari ponsel — termasuk [deploy blog Astro ke GitHub Pages](/wims-teknologi/posts/cara-deploy-blog-astro-ke-github-pages/) tanpa menyentuh komputer.]]></content:encoded>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Content Collections di Astro: Mengelola Artikel dengan Skema Ketat]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/content-collections-astro/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/content-collections-astro/</guid>
+      <description><![CDATA[Content Collections membantu mengelola artikel markdown dengan skema frontmatter yang divalidasi saat build. Berikut cara menggunakannya.]]></description>
+      <category><![CDATA[astro]]></category>
+      <category><![CDATA[content-collections]]></category>
+      <category><![CDATA[markdown]]></category>
+      <content:encoded><![CDATA[Salah satu fitur unggulan Astro untuk blog adalah content collections. Fitur ini memungkinkan Anda mengelompokkan konten markdown, menetapkan skema frontmatter, dan memvalidasinya saat build sehingga kesalahan struktur terdeteksi sebelum diterbitkan. Artikel ini menjelaskan cara kerja dan penerapannya.
+
+## Apa itu Content Collections?
+
+Content collections adalah cara Astro mengatur dokumen markdown, MDX, atau JSON ke dalam grup yang terstruktur. Setiap koleksi memiliki skema — definisi field apa saja yang boleh dan wajib ada di frontmatter setiap dokumen.
+
+Dengan skema, Anda mendapat:
+
+- **Validasi otomatis** — build gagal bila field wajib hilang atau tipe datanya salah.
+- **TypeScript autocomplete** — field dikenali editor secara otomatis.
+- **Struktur konsisten** — semua artikel mengikuti pola yang sama.
+
+## Mendefinisikan Koleksi
+
+Koleksi didefinisikan di file konfigurasi konten, misalnya `src/content.config.ts`:
+
+```ts
+import { defineCollection, z } from 'astro:content';
+
+const posts = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    date: z.coerce.date(),
+    excerpt: z.string().optional(),
+    tags: z.array(z.string()).default([]),
+  }),
+});
+
+export const collections = { posts };
+```
+
+Setiap artikel adalah file markdown di `src/content/posts/` dengan frontmatter mengikuti skema:
+
+```markdown
+---
+title: "Judul Artikel"
+date: "2026-08-17"
+excerpt: "Ringkasan singkat."
+tags: ["astro", "seo"]
+---
+```
+
+Nama file menentukan slug, misalnya `cara-riset-keyword-untuk-blog.md` menjadi URL `posts/cara-riset-keyword-untuk-blog/`.
+
+## Mengambil dan Merender Konten
+
+Untuk mengambil semua artikel dalam satu koleksi:
+
+```ts
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('posts');
+```
+
+Untuk mengambil satu artikel dan merendernya:
+
+```ts
+import { getCollection, render } from 'astro:content';
+
+const post = (await getCollection('posts')).find((p) => p.slug === 'nama-slug');
+const { Content, headings } = await render(post);
+```
+
+Variabel `headings` berguna untuk membuat daftar isi otomatis, seperti yang dipakai blog ini.
+
+## Kapan Menggunakan MDX?
+
+Jika artikel memerlukan komponen interaktif di tengah konten, gunakan koleksi tipe `content` dengan file `.mdx`. MDX memungkinkan mengimpor komponen Astro langsung di dalam dokumen. Untuk artikel biasa yang hanya berisi teks dan gambar, markdown standar sudah cukup.
+
+Pertimbangan lain: file MDX membutuhkan penanganan build sedikit berbeda dan sebaiknya hanya dipakai saat benar-benar dibutuhkan komponen.
+
+## Manfaat untuk Blog Multikategori
+
+Dengan skema, Anda bisa menambah field seperti `category` atau `featured` lalu menyaring artikel saat render:
+
+```ts
+const seoPosts = posts.filter((p) => p.data.tags.includes('seo'));
+```
+
+Ini menjadi dasar pembuatan halaman kategori atau tag otomatis, dan memudahkan penataan [topical cluster](/wims-teknologi/posts/cara-riset-keyword-untuk-blog/).
+
+## FAQ
+
+### Apa perbedaan content collections dan folder biasa?
+
+Content collections menambahkan skema dan validasi. Folder biasa hanya menampung file tanpa aturan field, sehingga kesalahan frontmatter baru terlihat saat render.
+
+### Bisakah collection berisi file JSON?
+
+Bisa. Dengan `type: 'data'`, koleksi membaca file JSON dan YAML sebagai data terstruktur, berguna untuk data non-artikel seperti testimoni atau pengaturan.
+
+### Apakah content collections memperlambat build?
+
+Tidak signifikan. Validasi terjadi sekali saat build dan hasilnya tetap berupa halaman statis yang cepat.
+
+## Kesimpulan
+
+Content collections membuat pengelolaan artikel lebih aman dan terstruktur. Tentukan skema frontmatter sekali, lalu setiap artikel baru terjamin valid sebelum dipublikasikan. Ini fondasi teknis yang solid untuk blog yang ingin terus bertambah tanpa merusak struktur — dan memudahkan membangun [topical authority lewat riset keyword](/wims-teknologi/posts/cara-riset-keyword-untuk-blog/).]]></content:encoded>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Core Web Vitals untuk Blog: Panduan Optimasi Performa]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/core-web-vitals-untuk-blog/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/core-web-vitals-untuk-blog/</guid>
+      <description><![CDATA[Core Web Vitals mengukur pengalaman nyata pengguna: loading, interaksi, dan stabilitas visual. Berikut cara memahami dan mengoptimalkannya untuk blog.]]></description>
+      <category><![CDATA[seo]]></category>
+      <category><![CDATA[performa]]></category>
+      <category><![CDATA[core-web-vitals]]></category>
+      <content:encoded><![CDATA[Core Web Vitals adalah kumpulan metrik Google yang mengukur pengalaman nyata pengguna saat membuka halaman. Meskipun bukan satu-satunya faktor peringkat, metrik ini penting karena mencerminkan kenyamanan membaca — sesuatu yang sangat relevan untuk blog. Artikel ini menjelaskan tiga metrik utama dan cara mengoptimalkannya.
+
+## Apa Saja Core Web Vitals?
+
+Ada tiga metrik inti:
+
+1. **Largest Contentful Paint (LCP)** — kecepatan elemen terbesar dimuat. Target di bawah 2,5 detik.
+2. **Interaction to Next Paint (INP)** — responsivitas halaman terhadap interaksi pengguna. Target di bawah 200 milidetik.
+3. **Cumulative Layout Shift (CLS)** — seberapa besar tata letak bergeser saat memuat. Target di bawah 0,1.
+
+LCP menggantikan kesan pertama, INP menggantikan metrik interaksi lama, dan CLS mengukur stabilitas visual.
+
+## Mengoptimalkan LCP
+
+LCP biasanya adalah gambar utama atau teks besar. Cara memperbaikinya:
+
+- **Sediakan gambar ukuran tepat** — hindari mengunggah gambar raksasa lalu mengecilkannya lewat CSS.
+- **Gunakan format modern** — format terkompresi seperti WebP dan AVIF jauh lebih ringan.
+- **Preload elemen kunci** — tambahkan `rel="preload"` pada gambar hero atau font penting.
+- **Hindari render blocking** — CSS dan JavaScript yang tidak penting sebaiknya ditunda.
+
+Untuk blog, teks artikel adalah elemen utama. Memastikan font tidak memblokir render adalah langkah yang sangat membantu.
+
+## Mengoptimalkan INP
+
+INP mengukur seberapa cepat halaman merespons klik, ketukan, atau input. Praktik terbaik:
+
+- **Kurangi JavaScript berjalan di main thread** — sebagian besar skrip tidak perlu dijalankan saat halaman pertama kali dimuat.
+- **Hindari skrip besar di halaman** — framework seperti Astro membantu karena mengirim HTML statis tanpa JavaScript default.
+- **Debounce event** — untuk handler yang sering terpicu seperti scroll atau resize.
+
+Blog berbasis statis seperti Astro biasanya sudah unggul di metrik ini karena hampir tidak ada JavaScript yang dikirim.
+
+## Mengoptimalkan CLS
+
+CLS terjadi ketika elemen bergeser setelah halaman tampil. Penyebab umum:
+
+- **Gambar tanpa dimensi** — selalu berikan atribut lebar dan tinggi agar browser menyiapkan ruang.
+- **Font yang menukar layout** — font fallback dan web font dengan ukuran berbeda menyebabkan lompatan teks.
+- **Konten dinamis yang muncul tiba-tiba** — iklan atau banner yang disisipkan di tengah konten.
+
+Pastikan setiap gambar dan iframe punya ukuran tetap. Inilah penyebab paling sering penurunan skor CLS di blog.
+
+## Cara Mengukur
+
+Gunakan salah satu alat berikut:
+
+- **PageSpeed Insights** — mengukur data lapangan dan lab, cukup masukkan URL.
+- **Chrome DevTools → Performance** — untuk debugging detail.
+- **Search Console → Core Web Vitals** — laporan data pengguna nyata untuk halaman yang terindeks.
+
+Ukur sebelum dan sesudah perubahan agar tahu apakah optimasi berhasil.
+
+## Hubungan dengan SEO
+
+Core Web Vitals adalah bagian dari pengalaman halaman yang dipertimbangkan Google, di samping faktor seperti kecepatan dan keramahan perangkat. Untuk blog, performa yang baik juga menurunkan rasio pentalan karena pembaca tidak bosan menunggu. Artikel [SEO Dasar untuk Blog Modern](/wims-teknologi/posts/seo-basics/) menempatkan kecepatan sebagai salah satu fondasinya.
+
+## FAQ
+
+### Apakah Core Web Vitals wajib sempurna untuk semua halaman?
+
+Tidak wajib sempurna, tetapi harus melewati ambang batas pada sebagian besar kunjungan agar berpengaruh baik pada peringkat.
+
+### Kenapa skor PageSpeed berbeda-beda di setiap pengukuran?
+
+Data lab tergantung kondisi perangkat dan koneksi saat pengujian. Data lapangan dari Search Console lebih mewakili pengguna nyata.
+
+### Apakah blog statis otomatis bagus di Core Web Vitals?
+
+Belum tentu, tetapi punya fondasi yang lebih baik. Masalah seperti gambar besar, font berat, dan layout shift tetap bisa menurunkan skor.
+
+## Kesimpulan
+
+Core Web Vitals mengukur tiga hal yang sangat dirasakan pembaca: kecepatan tampil, responsivitas, dan kestabilan tata letak. Optimasi paling berdampak untuk blog adalah gambar ringan, JavaScript minimal, dan gambar berukuran tetap. Ukur dengan PageSpeed Insights, perbaiki satu per satu, lalu pantau kembali — perbaikan kecil yang konsisten menghasilkan pengalaman membaca yang jauh lebih baik.]]></content:encoded>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Evergreen Content untuk Blog: Panduan Membuat Konten Abadi]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/evergreen-content-untuk-blog/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/evergreen-content-untuk-blog/</guid>
+      <description><![CDATA[Evergreen content tetap relevan bertahun-tahun dan terus mendatangkan traffic. Berikut cara memilih topik dan menulis konten yang tahan lama.]]></description>
+      <category><![CDATA[seo]]></category>
+      <category><![CDATA[content-strategy]]></category>
+      <category><![CDATA[evergreen-content]]></category>
+      <content:encoded><![CDATA[Tidak semua artikel diperlakukan sama oleh waktu. Artikel berita tenggelam dalam hitungan hari, tetapi panduan dan tutorial bisa terus menarik pengunjung bertahun-tahun. Konten jenis ini disebut evergreen content. Artikel ini menjelaskan cara memilih dan menulis konten abadi untuk blog Anda.
+
+## Apa itu Evergreen Content?
+
+Evergreen content adalah konten yang tetap relevan dan bermanfaat dalam jangka panjang, tanpa bergantung pada momen tertentu. Contohnya:
+
+- Panduan "cara riset keyword untuk blog"
+- Tutorial "deploy blog astro ke github pages"
+- Penjelasan konsep seperti "apa itu static site generator"
+
+Sebaliknya, konten yang cepat basi adalah berita, tren, dan pembahasan produk yang sering berubah.
+
+## Keuntungan Konten Abadi
+
+Membangun konten evergreen memberi beberapa manfaat:
+
+- **Traffic jangka panjang** — artikel terus ditemukan lewat pencarian tanpa perlu promo ulang.
+- **Aset komponen** — setiap artikel menjadi batu bata otoritas topik.
+- **Efisien** — sekali menulis, manfaat terus mengalir dengan perawatan ringan.
+
+Artikel seperti [cara setup Termux untuk pengembangan web](/wims-teknologi/posts/cara-setup-termux-untuk-pengembangan-web/) adalah contoh konten yang tetap dibutuhkan setiap pemula baru datang.
+
+## Cara Memilih Topik Evergreen
+
+Gunakan pertanyaan ini saat memilih topik:
+
+- Apakah masalah yang dibahas selalu ada?
+- Apakah jawabannya tidak berubah cepat?
+- Apakah dicari orang sepanjang tahun?
+- Apakah mengajarkan keterampilan yang tidak usang?
+
+Topik yang berbasis konsep dan keterampilan jauh lebih abadi daripada topik berbasis berita.
+
+## Menulis agar Tetap Relevan
+
+Beberapa praktik agar konten tidak cepat usang:
+
+- **Fokus pada prinsip** — ajarkan cara berpikir, bukan hanya langkah yang bisa berubah.
+- **Hindari tanggal dan angka yang mudah basi** — bila perlu, beri label "periksa versi terbaru".
+- **Gunakan contoh yang tetap valid** — hindari merujuk versi software tertentu secara berlebihan.
+- **Perbarui berkala** — tambahkan catatan versi terbaru agar tetap akurat.
+
+Prinsip ini sejalan dengan cara [riset keyword untuk blog](/wims-teknologi/posts/cara-riset-keyword-untuk-blog/) memilih topik yang punya nilai bertahan lama.
+
+## Memperbarui Konten Lama
+
+Konten evergreen perlu dirawat. Jadwalkan peninjauan berkala:
+
+1. Periksa apakah informasi masih akurat.
+2. Tambahkan bagian baru bila topik berkembang.
+3. Perbarui tautan yang rusak.
+4. Tandai tanggal pembaruan agar pembaca tahu.
+
+Artikel yang diperbarui cenderung dihargai lebih oleh mesin pencari.
+
+## Menggabungkan dengan Konten Trending
+
+Evergreen tidak berarti menolak semua konten lain. Strategi sehat menggabungkan keduanya: konten abadi menjadi tulang punggung traffic, sementara konten yang relevan dengan momen menarik pembaca baru dan memperkenalkan mereka pada artikel utama.
+
+## FAQ
+
+### Apakah semua topik bisa jadi evergreen?
+
+Tidak semua. Topik yang sangat dinamis seperti berita teknologi sebaiknya dihindari atau dibingkai ulang jadi prinsip yang tahan lama.
+
+### Berapa sering konten evergreen perlu diperbarui?
+
+Tergantung topik. Konten teknis bisa diperiksa setiap 6–12 bulan untuk memastikan versi dan praktik masih akurat.
+
+### Apakah evergreen content menjamin traffic?
+
+Tidak menjamin, tetapi peluangnya jauh lebih besar karena tetap dicari dalam jangka panjang bila dipasang dengan [SEO yang benar](/wims-teknologi/posts/seo-basics/).
+
+## Kesimpulan
+
+Evergreen content adalah fondasi traffic jangka panjang blog: pilih masalah yang selalu ada, ajarkan prinsip, hindari hal yang cepat basi, dan rawat dengan pembaruan berkala. Ditulis dengan [struktur SEO yang baik](/wims-teknologi/posts/cara-menulis-konten-blog-seo-friendly/), setiap artikel abadi menjadi aset yang terus bekerja untuk blog Anda.]]></content:encoded>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Menggunakan Git dan GitHub di Termux: Panduan Lengkap]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/git-dan-github-di-termux/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/git-dan-github-di-termux/</guid>
+      <description><![CDATA[Kelola repositori dan sinkronkan project langsung dari ponsel. Berikut cara setup Git, membuat SSH key, dan push ke GitHub dari Termux.]]></description>
+      <category><![CDATA[termux]]></category>
+      <category><![CDATA[git]]></category>
+      <category><![CDATA[github]]></category>
+      <category><![CDATA[android]]></category>
+      <content:encoded><![CDATA[Git dan GitHub adalah pasangan wajib bagi siapa pun yang mengembangkan project, termasuk dari ponsel. Dengan Termux, Anda bisa melakukan clone, commit, dan push repositori tanpa komputer. Artikel ini memandu pengaturan Git dan GitHub di Termux dari awal.
+
+## Instal dan Konfigurasi Git
+
+Pastikan Git sudah terpasang, lalu atur identitas sekali saja:
+
+```bash
+pkg install git
+git config --global user.name "Nama Anda"
+git config --global user.email "email@contoh.com"
+```
+
+Identitas ini tercatat pada setiap commit. Gunakan email yang sama dengan akun GitHub agar kontribusi Anda dikaitkan dengan benar.
+
+## Membuat SSH Key untuk GitHub
+
+Menggunakan SSH lebih aman dan tidak perlu memasukkan password setiap push. Buat key dengan:
+
+```bash
+ssh-keygen -t ed25519 -C "email@contoh.com"
+```
+
+Ikuti prompt dengan menekan Enter untuk lokasi default. Untuk mengamankan key, bisa ditambah passphrase. Selanjutnya tampilkan public key:
+
+```bash
+cat ~/.ssh/id_ed25519.pub
+```
+
+Salin seluruh isi output, lalu tambahkan di **GitHub → Settings → SSH and GPG keys → New SSH key**. Untuk memastikan koneksi berhasil:
+
+```bash
+ssh -T git@github.com
+```
+
+Respons pertama kali akan menanyakan konfirmasi host; ketik `yes`.
+
+## Clone dan Push Project
+
+Sekarang repositori bisa dikloning dan dikelola:
+
+```bash
+git clone git@github.com:username/repository.git
+cd repository
+# edit file ...
+git add .
+git commit -m "Perbarui konten"
+git push origin main
+```
+
+Alih-alih menyalin remote setiap kali, repositori hasil `clone` sudah terhubung otomatis ke remote `origin`.
+
+## Menghubungkan Project yang Sudah Ada
+
+Untuk project lokal yang belum terhubung ke GitHub:
+
+```bash
+git init
+git remote add origin git@github.com:username/repository.git
+git branch -M main
+git add .
+git commit -m "Initial commit"
+git push -u origin main
+```
+
+Dari sini, seluruh alur kerja biasa bisa dipakai langsung dari Termux.
+
+## Mengelola Multi Repositori
+
+Beberapa kiat untuk kenyamanan sehari-hari:
+
+- **Simpan passphrase key** — aktifkan agent agar tidak diminta passphrase berulang: `ssh-add ~/.ssh/id_ed25519`.
+- **Gunakan alias** — singkat perintah yang sering dipakai dengan `git config --global alias.co checkout`.
+- **Perhatikan line ending** — pada project bersama, atur `git config --global core.autocrlf` sesuai platform rekan kerja.
+
+Ruang penyimpanan Termux terbatas, jadi bersihkan cache dan hapus clone yang tidak terpakai. Detail lebih lanjut ada di [Kiat Menggunakan Termux untuk Pengembangan Web di Android](/wims-teknologi/posts/termux-tips/).
+
+## Alur Kerja untuk Blog
+
+Alur paling umum di ponsel adalah: edit artikel, commit, lalu push — deployment berjalan otomatis. Jika blog Anda dibangun dengan Astro, kombinasi Termux + Git + GitHub Pages memungkinkan seluruh proses, mulai dari [setup Termux](/wims-teknologi/posts/cara-setup-termux-untuk-pengembangan-web/) hingga [deploy blog Astro ke GitHub Pages](/wims-teknologi/posts/cara-deploy-blog-astro-ke-github-pages/), dilakukan tanpa komputer.
+
+## FAQ
+
+### Apakah aman menyimpan SSH key di ponsel?
+
+Ya, selama perangkat terkunci dan key dilindungi passphrase. Jangan pernah membagikan private key ke siapa pun.
+
+### Kenapa `git push` diminta password padahal sudah pakai SSH?
+
+Pastikan remote memakai URL SSH (`git@github.com:...`), bukan URL HTTPS. Periksa dengan `git remote -v`.
+
+### Bisakah menangani konflik merge di Termux?
+
+Bisa. Saat konflik terjadi, edit file yang bertanda `<<<<<<<`, pilih hasil yang benar, lalu commit ulang.
+
+## Kesimpulan
+
+Git dan GitHub di Termux memungkinkan pengembangan penuh dari ponsel: install Git, buat SSH key, hubungkan ke GitHub, lalu clone dan push repositori. Untuk project blog, alur edit–commit–push langsung memicu deployment. Dengan setup yang benar, tidak ada lagi alasan menunggu komputer untuk menerbitkan konten.]]></content:encoded>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Internal Linking untuk Blog: Panduan Praktis SEO]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/internal-linking-untuk-blog/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/internal-linking-untuk-blog/</guid>
+      <description><![CDATA[Tautan internal membantu pembaca menjelajah dan membantu Google memahami struktur serta otoritas halaman. Berikut cara menerapkannya dengan benar.]]></description>
+      <category><![CDATA[seo]]></category>
+      <category><![CDATA[internal-linking]]></category>
+      <category><![CDATA[on-page-seo]]></category>
+      <content:encoded><![CDATA[Tautan internal adalah link dari satu halaman di situs Anda ke halaman lain di situs yang sama. Fungsinya ganda: membantu pembaca menemukan konten lanjutan, dan membantu mesin pencari memahami hubungan antar halaman. Artikel ini membahas cara membangun internal linking untuk blog yang benar, tanpa berlebihan.
+
+## Kenapa Internal Linking Penting?
+
+Internal link memberi tiga manfaat utama:
+
+1. **Navigasi pembaca** — pembaca menemukan artikel lain yang relevan, sehingga waktu kunjungan lebih lama.
+2. **Distribusi otoritas** — link mengalirkan sinyal peringkat dari halaman populer ke halaman yang ingin diprioritaskan.
+3. **Kontekstualisasi** — Google memahami bahwa halaman-halaman yang saling terhubung membentuk satu topik yang lebih luas.
+
+Tanpa tautan internal, setiap artikel berdiri sendiri dan sulit ditemukan, terutama halaman yang tidak ada di beranda.
+
+## Struktur yang Benar: Pillar dan Cluster
+
+Susun konten dengan pola *pillar* dan *cluster*:
+
+- **Pillar** — halaman utama yang membahas topik secara luas, misalnya [SEO Dasar untuk Blog Modern](/wims-teknologi/posts/seo-basics/).
+- **Cluster** — artikel mendalam yang membahas satu aspek spesifik, seperti riset keyword, sitemap, atau open graph.
+
+Setiap artikel cluster menautkan ke pillar, dan pillar menautkan balik ke semua anggota cluster. Pola ini memberi sinyal jelas bahwa situs Anda otoritatif pada topik tersebut.
+
+## Aturan Dasar yang Perlu Diingat
+
+Terapkan prinsip berikut agar tautan internal terasa alami:
+
+- **Anchor text deskriptif** — gunakan frasa yang menggambarkan tujuan link, bukan "klik di sini".
+- **Relevansi kontekstual** — tautkan hanya saat memang mendukung kalimat.
+- **Jangan memaksakan** — satu hingga tiga link internal per artikel sudah cukup untuk artikel pendek.
+- **Hindari tautan berulang** — menautkan halaman yang sama berkali-kali dalam satu artikel tidak menambah nilai.
+- **Tautkan halaman penting lebih sering** — halaman pillar atau konversi layak menerima lebih banyak tautan.
+
+Contoh penempatan alami:
+
+> Sebelum menulis, lakukan [riset keyword untuk blog](/wims-teknologi/posts/cara-riset-keyword-untuk-blog/) agar topik sesuai dengan yang dicari pembaca.
+
+## Menemukan Kesempatan Menautkan
+
+Cari peluang internal link dari:
+
+1. **Konten yang sudah ada** — telusuri artikel lama untuk frasa yang bisa ditautkan ke artikel baru.
+2. **Pencarian situs** — fitur pencarian di blog Anda menunjukkan topik yang sering diburu pembaca.
+3. **Sidebar dan footer** — tempat terbaik untuk link ke halaman penting seperti "Semua Artikel".
+
+Blog ini sendiri menerapkan pola ini, misalnya dari [Cara Deploy Blog Astro ke GitHub Pages](/wims-teknologi/posts/cara-deploy-blog-astro-ke-github-pages/) menuju artikel sitemap dan open graph.
+
+## Perbedaan dengan Tautan Eksternal
+
+Tautan internal mengarah ke halaman sendiri, sedangkan tautan eksternal keluar ke situs lain. Keduanya berguna, tetapi tidak boleh menggantikan satu sama lain. Tautan eksternal menambah kredibilitas dengan merujuk sumber; tautan internal mempertahankan pembaca tetap di situs Anda.
+
+## FAQ
+
+### Berapa banyak internal link yang ideal per artikel?
+
+Tidak ada angka pasti. Fokus pada relevansi — umumnya dua hingga lima tautan internal per artikel dianggap wajar untuk konten menengah.
+
+### Apakah semua internal link harus berisi keyword?
+
+Tidak. Variasikan anchor text. Menggunakan keyword exact-match berulang kali terlihat tidak natural dan bisa dianggap spam.
+
+### Haruskah halaman lama ditautkan ke halaman baru?
+
+Sebaiknya ya. Menambahkan link dari artikel lama ke artikel baru membantu halaman baru mendapat lalu lintas dan otoritas lebih cepat.
+
+## Kesimpulan
+
+Internal linking yang baik membuat blog terasa seperti satu ekosistem, bukan kumpulan artikel terpisah. Bangun struktur pillar-cluster, gunakan anchor text deskriptif dan kontekstual, lalu perbarui artikel lama dengan tautan ke konten baru. Dengan konsistensi, otoritas topik dan pengalaman pembaca sama-sama meningkat.]]></content:encoded>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Keyword Cannibalization di Blog: Cara Menghindarinya]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/keyword-cannibalization-untuk-blog/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/keyword-cannibalization-untuk-blog/</guid>
+      <description><![CDATA[Keyword cannibalization terjadi saat beberapa artikel memperebutkan keyword yang sama. Berikut cara mendeteksi, menggabungkan, dan memperbaikinya.]]></description>
+      <category><![CDATA[seo]]></category>
+      <category><![CDATA[keyword-cannibalization]]></category>
+      <category><![CDATA[content-strategy]]></category>
+      <content:encoded><![CDATA[Keyword cannibalization adalah kondisi ketika dua atau lebih halaman di situs yang sama memperebutkan keyword yang sama. Alih-alih menguatkan, justru melemahkan: Google harus memilih halaman mana yang ditampilkan, dan keduanya saling membagi sinyal peringkat. Artikel ini menjelaskan cara mengenali dan menyelesaikan masalah ini.
+
+## Kapan Cannibalization Terjadi?
+
+Masalah ini muncul saat blog membuat beberapa artikel dengan maksud yang hampir sama. Contoh klasik:
+
+- Dua artikel "cara mempercepat blog" dan "optimasi performa blog" — pembaca yang mengetik salah satu keyword bisa menerima kedua artikel tersebut sebagai hasil, sehingga otoritas terpecah.
+- Artikel dengan judul yang hanya beda sedikit dan menargetkan intent yang sama.
+
+Membuat banyak artikel tipis untuk variasi keyword yang sama adalah penyebab paling umum.
+
+## Cara Mendeteksi
+
+Beberapa cara menemukan indikasi cannibalization:
+
+- **Cek daftar artikel** — cari judul yang membahas topik sama.
+- **Pencarian di situs** — ketik satu keyword dan lihat apakah beberapa halaman muncul.
+- **Search Console** — periksa apakah dua halaman bersaing untuk query yang sama pada laporan performa.
+
+Kuncinya: bandingkan *search intent*, bukan sekadar kata. Dua artikel bisa memakai kata sama tetapi menjawab kebutuhan berbeda — itu bukan cannibalization.
+
+## Cara Memperbaikinya
+
+Bila dua halaman ternyata menargetkan intent yang sama, pilih salah satu solusi:
+
+- **Gabungkan (merge)** — satukan menjadi satu artikel kuat, lalu redirect halaman lama.
+- **Diferensiasi** — jika keduanya layak hidup, buat masing-masing menjawab intent yang benar-benar berbeda dan bedakan target keyword-nya.
+- **Update halaman yang lebih kuat** — perkuat satu halaman sebagai jawaban utama, dan arahkan halaman lain ke topik yang lebih spesifik.
+
+Menggabungkan lebih disukai daripada mempertahankan dua halaman yang saling berebut.
+
+## Mencegah Sejak Awal
+
+Langkah paling efektif adalah mencegah sebelum menulis:
+
+1. Lakukan riset keyword yang rapi — petakan intent setiap keyword sebelum menulis.
+2. Buat satu artikel kuat untuk satu intent.
+3. Gunakan halaman tag dan kategori untuk memperkuat topik, bukan menciptakan artikel duplikat.
+
+Proses [riset keyword untuk blog](/wims-teknologi/posts/cara-riset-keyword-untuk-blog/) yang melibatkan pengecekan artikel existing adalah pertahanan terbaik.
+
+## Peran Internal Linking
+
+Internal linking membantu mencegah masalah dengan memperjelas hierarki: jika sebuah topik dibahas di beberapa halaman, pastikan ada satu halaman yang jelas menjadi *pillar*, dan halaman lain menautkan ke sana dengan konteks yang berbeda. Pola ini dijelaskan di [artikel internal linking untuk blog](/wims-teknologi/posts/internal-linking-untuk-blog/).
+
+## FAQ
+
+### Apakah dua artikel dengan keyword mirip pasti cannibalization?
+
+Tidak. Yang menentukan adalah search intent. Jika keduanya menjawab kebutuhan berbeda, itu sehat dan justru memperluas cakupan.
+
+### Apakah halaman tag bisa menyebabkan cannibalization?
+
+Bisa bila halaman tag menampilkan isi yang sama dengan halaman artikel utama. Gunakan tags sebagai pelengkap navigasi, bukan pengganti artikel.
+
+### Lebih baik merge atau redirect?
+
+Merge konten lalu redirect URL lama adalah pendekatan paling bersih — otoritas terkumpul di satu halaman tanpa kehilangan pembaca lama.
+
+## Kesimpulan
+
+Keyword cannibalization melemahkan peringkat karena Google bingung halaman mana yang harus ditampilkan. Deteksi sejak awal dengan membandingkan intent, gabungkan halaman yang bersaing, dan cegah lewat riset keyword yang terstruktur. Satu artikel padat untuk satu intent selalu lebih kuat daripada beberapa artikel tipis yang saling berebut.]]></content:encoded>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Open Graph Meta Tag untuk Blog: Panduan Lengkap]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/open-graph-meta-tag-untuk-blog/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/open-graph-meta-tag-untuk-blog/</guid>
+      <description><![CDATA[Open Graph mengontrol tampilan link blog saat dibagikan di WhatsApp, Facebook, dan X. Pelajari tag wajib, ukuran gambar, dan cara memasangnya di Astro.]]></description>
+      <category><![CDATA[seo]]></category>
+      <category><![CDATA[open-graph]]></category>
+      <category><![CDATA[meta-tag]]></category>
+      <category><![CDATA[astro]]></category>
+      <content:encoded><![CDATA[Ketika link artikel dibagikan di WhatsApp, Facebook, atau X, muncul pratinjau dengan judul, deskripsi, dan gambar. Tampilan itu dikontrol oleh Open Graph meta tag. Artikel ini menjelaskan apa itu Open Graph, tag mana yang wajib dipasang, serta cara menerapkannya di blog Astro.
+
+## Apa itu Open Graph?
+
+Open Graph adalah protokol dari Meta yang memungkinkan halaman web mendeskripsikan dirinya saat dibagikan di media sosial dan aplikasi pesan. Tanpa tag ini, platform hanya menebak judul dan memilih gambar secara acak — hasilnya sering tidak menarik dan tidak akurat.
+
+Karena pratinjau menentukan apakah orang mengklik link Anda, Open Graph adalah bagian penting dari SEO dan distribusi konten.
+
+## Tag Wajib Open Graph
+
+Setidaknya pasang enam tag dasar berikut:
+
+```html
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Judul Artikel" />
+<meta property="og:description" content="Ringkasan menarik tentang isi artikel." />
+<meta property="og:url" content="https://contoh.com/posts/slug/" />
+<meta property="og:image" content="https://contoh.com/og-image.png" />
+<meta property="og:site_name" content="Nama Blog" />
+```
+
+- **og:type** — `article` untuk artikel, `website` untuk halaman beranda.
+- **og:title** — judul yang ditampilkan saat dibagikan.
+- **og:description** — ringkasan singkat; platform biasanya memotong sekitar dua baris.
+- **og:url** — URL kanonik halaman, agar semua metrik terpusat pada satu URL.
+- **og:image** — gambar pratinjau dengan ukuran rekomendasi 1200×630 piksel.
+- **og:site_name** — nama situs yang muncul di pratinjau.
+
+## Aturan Gambar yang Benar
+
+Gambar pratinjau adalah elemen paling berpengaruh. Gunakan:
+
+- Ukuran **1200×630 piksel** atau rasio mendekati 1.91:1.
+- Format PNG atau JPG.
+- Ukuran file di bawah sekitar 300 KB agar cepat dimuat.
+- Pastikan gambar benar-benar tersedia lewat URL publik (bukan URL lokal).
+
+Cek pratinjau hasilnya dengan tool validasi dari platform yang bersangkutan, misalnya Facebook Sharing Debugger, sebelum menyebarkan link.
+
+## Memasang Open Graph di Astro
+
+Di Astro, tag Open Graph idealnya diletakkan di layout agar otomatis muncul di semua halaman. Layout ini mengisi nilai dari frontmatter masing-masing halaman:
+
+```astro
+---
+const { title, description, image } = Astro.props;
+const url = new URL(Astro.url.pathname, Astro.site);
+---
+<meta property="og:type" content="article" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={url} />
+<meta property="og:image" content={image} />
+<meta property="og:site_name" content="Nama Blog" />
+```
+
+Dengan pendekatan ini, setiap halaman mendapat Open Graph yang benar tanpa menulis tag berulang-ulang. Pastikan nilai `image` memakai URL absolut, karena sebagian platform menolak URL relatif.
+
+Untuk Twitter/X, tambahkan juga tag pendamping:
+
+```html
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Judul Artikel" />
+<meta name="twitter:description" content="Ringkasan singkat" />
+<meta name="twitter:image" content="https://contoh.com/og-image.png" />
+```
+
+## Hubungan dengan SEO
+
+Open Graph tidak langsung memengaruhi peringkat pencarian, tetapi mendukung SEO secara tidak langsung: pratinjau yang menarik meningkatkan klik dan pembagian, yang berdampak pada lalu lintas dan keterlibatan. Letakkan bersama [sitemap dan robots.txt](/wims-teknologi/posts/sitemap-dan-robots-txt-untuk-blog/) sebagai bagian dari pengaturan teknis blog yang menyeluruh — cek juga [checklist SEO untuk situs Astro](/wims-teknologi/posts/seo-untuk-situs-astro/) untuk memastikan tidak ada bagian yang terlewat.
+
+## FAQ
+
+### Apakah Open Graph sama dengan meta description?
+
+Tidak. Meta description digunakan mesin pencari di hasil pencarian, sedangkan Open Graph digunakan saat link dibagikan di platform sosial. Keduanya bisa dipasang berdampingan.
+
+### Kenapa gambar Open Graph tidak muncul saat dibagikan?
+
+Platform menyimpan cache pratinjau. Setelah mengubah gambar, gunakan validasi platform untuk membersihkan cache. Pastikan juga URL gambar dapat diakses publik dan ukurannya sesuai.
+
+### Apakah wajib menyediakan og:image?
+
+Tidak wajib, tetapi sangat disarankan. Halaman tanpa `og:image` biasanya ditampilkan tanpa gambar atau memakai gambar acak, sehingga kurang menarik untuk diklik.
+
+## Kesimpulan
+
+Open Graph meta tag menentukan bagaimana link blog Anda tampil saat dibagikan. Pasang tag dasar seperti `og:title`, `og:description`, `og:url`, dan `og:image` dengan ukuran gambar 1200×630, lalu letakkan di layout Astro agar otomatis diterapkan ke semua halaman. Pratinjau yang rapi membuat konten lebih mudah diklik dan dibagikan.]]></content:encoded>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Perintah Dasar Termux untuk Pemula]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/perintah-dasar-termux-untuk-pemula/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/perintah-dasar-termux-untuk-pemula/</guid>
+      <description><![CDATA[Kumpulan perintah Linux yang paling sering dipakai di Termux untuk pengembangan: navigasi, file, paket, dan kontrol versi. Disertai penjelasan singkat.]]></description>
+      <category><![CDATA[termux]]></category>
+      <category><![CDATA[linux]]></category>
+      <category><![CDATA[perintah-dasar]]></category>
+      <content:encoded><![CDATA[Termux memberi terminal Linux lengkap di Android, tetapi bagi pemula tumpukan perintah bisa terasa menakutkan. Artikel ini merangkum perintah dasar Termux yang paling sering dipakai dalam pengembangan, lengkap dengan contoh singkat — cocok sebagai referensi awal sebelum mendalami [setup Termux untuk pengembangan web](/wims-teknologi/posts/cara-setup-termux-untuk-pengembangan-web/).
+
+## Navigasi Direktori
+
+Pindah dan lihat lokasi:
+
+```bash
+pwd            # lokasi saat ini
+ls             # daftar file
+ls -la         # daftar lengkap dengan detail
+cd blog-saya   # pindah ke folder
+cd ..          # pindah ke folder induk
+cd ~           # pindah ke direktori rumah
+```
+
+`~` selalu merujuk ke folder utama Termux, tempat project biasanya disimpan.
+
+## Mengelola File
+
+Buat, salin, pindahkan, dan hapus:
+
+```bash
+touch catatan.md      # buat file kosong
+mkdir project         # buat folder
+cp catatan.md backup  # salin
+mv catatan.md arsip   # pindahkan/ubah nama
+rm catatan.md         # hapus file
+rm -r folder          # hapus folder beserta isinya
+```
+
+Hati-hati dengan `rm -r` — penghapusan di terminal tidak bisa dibatalkan.
+
+## Melihat dan Mengedit Isi File
+
+Baca dan edit file teks:
+
+```bash
+cat catatan.md        # tampilkan isi
+less catatan.md       # baca dengan scroll (tekan q untuk keluar)
+nano catatan.md       # editor sederhana
+```
+
+`nano` adalah editor yang ramah pemula; simpan dengan `Ctrl+O`, keluar dengan `Ctrl+X`.
+
+## Manajemen Paket
+
+Instal dan hapus aplikasi lewat `pkg`:
+
+```bash
+pkg update            # perbarui daftar paket
+pkg upgrade           # perbarui paket terpasang
+pkg search node       # cari paket
+pkg install nodejs    # pasang paket
+pkg list-installed    # lihat paket terpasang
+pkg clean             # bersihkan cache
+```
+
+Selalu jalankan `pkg update` sebelum menginstal paket baru.
+
+## Kontrol Versi dengan Git
+
+Perintah Git yang sering dipakai:
+
+```bash
+git status            # kondisi repo
+git add .             # tandai perubahan
+git commit -m "pesan" # simpan perubahan
+git push              # kirim ke remote
+git pull              # ambil perubahan dari remote
+```
+
+Alur lengkap Git di ponsel dibahas di [artikel Git dan GitHub di Termux](/wims-teknologi/posts/git-dan-github-di-termux/).
+
+## Izin dan Bantuan
+
+Jangan lupa dua perintah berikut:
+
+```bash
+man perintah    # dokumentasi lengkap (tekan q untuk keluar)
+perintah --help # bantuan singkat
+```
+
+`--help` adalah cara tercepat memahami opsi sebuah perintah.
+
+## Menggabungkan Perintah
+
+Tanda `&&` menjalankan perintah berurutan hanya jika sebelumnya berhasil:
+
+```bash
+cd blog-saya && npm install && npm run build
+```
+
+Pola ini menghemat waktu untuk alur yang sering diulang.
+
+## FAQ
+
+### Apakah harus hafal semua perintah?
+
+Tidak. Cukup kuasai navigasi dan file terlebih dahulu, lalu pelajari perintah lain saat dibutuhkan.
+
+### Apa bedanya `pkg` dan `apt`?
+
+Termux memakai `pkg` sebagai pembungkus `apt` yang lebih ramah pengguna. Keduanya mengelola paket di repositori Termux.
+
+### Bagaimana jika perintah tidak ditemukan?
+
+Paket yang menyediakan perintah itu mungkin belum terpasang, atau namanya berbeda di Termux. Gunakan `pkg search`.
+
+## Kesimpulan
+
+Perintah dasar Termux berkisar pada navigasi (`cd`, `ls`), pengelolaan file, manajemen paket (`pkg`), dan Git. Kuasai yang sering dipakai, manfaatkan `--help`, dan gabungkan perintah dengan `&&` untuk alur efisien. Dari dasar ini, seluruh pengembangan web di ponsel — termasuk [membangun blog dengan Astro](/wims-teknologi/posts/astro-termux/) — menjadi lebih mudah dikuasai.]]></content:encoded>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[SEO untuk Situs Astro: Checklist Lengkap]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/seo-untuk-situs-astro/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/seo-untuk-situs-astro/</guid>
+      <description><![CDATA[Astro sangat ramah SEO karena menghasilkan HTML statis. Berikut checklist lengkap SEO untuk situs Astro: metadata, sitemap, structured data, dan performa.]]></description>
+      <category><![CDATA[astro]]></category>
+      <category><![CDATA[seo]]></category>
+      <content:encoded><![CDATA[Astro menghasilkan HTML statis tanpa JavaScript default, sehingga fondasi SEO-nya sudah kuat. Namun kecepatan saja tidak cukup. Artikel ini menyusun checklist SEO untuk situs Astro: dari metadata dan sitemap hingga structured data dan performa, agar situs mudah ditemukan dan berperingkat baik.
+
+## Metadata Dasar
+
+Setiap halaman wajib punya judul dan deskripsi yang unik. Di Astro, pasang di layout agar otomatis mewarisinya ke semua halaman:
+
+```astro
+<title>{title}</title>
+<meta name="description" content={description} />
+```
+
+Pastikan judul memuat keyword utama secara natural, dan deskripsi menjelaskan manfaat halaman, bukan sekadar mengulang judul.
+
+## Canonical dan Hreflang
+
+Situs dengan beberapa penamaan URL (misalnya berakhiran `/` dan tanpa `/`) perlu menetapkan URL kanonik agar Google tidak menganggapnya halaman duplikat:
+
+```astro
+<link rel="canonical" href={url} />
+<link rel="alternate" hrefLang="id" href={url} />
+```
+
+Canonical mengarah ke URL resmi, sedangkan hreflang membantu versi bahasa yang berbeda. Keduanya diletakkan di `<head>` layout — panduan canonical yang lebih lengkap ada di [artikel canonical URL untuk blog](/wims-teknologi/posts/canonical-url-untuk-blog/).
+
+## Sitemap dan Robots.txt
+
+Astro mendukung pembuatan sitemap dan robots.txt sebagai file statis. Pastikan:
+
+- `sitemap.xml` memuat semua URL artikel dengan `lastmod`.
+- `robots.txt` mengizinkan crawler dan menunjuk ke sitemap.
+- URL di dalamnya konsisten dengan `site` dan `base` di `astro.config.mjs`.
+
+Panduan lengkapnya ada di artikel [Sitemap dan Robots.txt untuk Blog](/wims-teknologi/posts/sitemap-dan-robots-txt-untuk-blog/).
+
+## Structured Data (JSON-LD)
+
+Structured data membantu mesin pencari memahami jenis konten. Untuk artikel, gunakan schema `Article` dan `BreadcrumbList` — panduan untuk yang terakhir ada di [artikel breadcrumb schema untuk blog](/wims-teknologi/posts/breadcrumb-schema-untuk-blog/):
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Judul Artikel",
+  "author": { "@type": "Person", "name": "Nama Penulis" },
+  "datePublished": "2026-08-17"
+}
+```
+
+Di Astro, blok JSON-LD ditambahkan lewat `<script type="application/ld+json" set:html={...} />` di halaman artikel.
+
+## Open Graph dan Twitter Card
+
+Saat link dibagikan, pratinjau yang rapi meningkatkan klik. Pasang Open Graph dan Twitter card di layout dengan gambar ukuran 1200×630. Detail penerapannya ada di artikel [Open Graph Meta Tag untuk Blog](/wims-teknologi/posts/open-graph-meta-tag-untuk-blog/).
+
+## Internal Linking dan Konten
+
+Halaman statis tidak otomatis saling terhubung. Bangun [internal linking](/wims-teknologi/posts/internal-linking-untuk-blog/) antar artikel dan gunakan halaman tag atau kategori untuk memperkuat topik. Sebelum menulis, lakukan [riset keyword untuk blog](/wims-teknologi/posts/cara-riset-keyword-untuk-blog/) agar topik menjawab kebutuhan pembaca.
+
+## Performa dan Core Web Vitals
+
+Astro sudah ringan, tetapi tetap perhatikan:
+
+- Kompresi gambar agar tidak membebani LCP.
+- Hindari font yang memblokir render.
+- Jangan menambahkan JavaScript ke halaman tanpa alasan.
+
+Optimasi lebih rinci dijelaskan di artikel [Core Web Vitals untuk Blog](/wims-teknologi/posts/core-web-vitals-untuk-blog/).
+
+## Verifikasi dengan Google Search Console
+
+Terakhir, daftarkan situs di Google Search Console, submit sitemap, dan pantau laporan indeksasi. Langkah ini memberi tahu Anda halaman mana yang terindeks dan mana yang bermasalah.
+
+## FAQ
+
+### Apakah Astro otomatis SEO-friendly?
+
+Astro memberi fondasi kuat lewat HTML statis dan kecepatan, tetapi metadata, sitemap, dan structured data tetap harus dipasang manual.
+
+### Perlu JavaScript untuk SEO di Astro?
+
+Tidak. Justru keunggulan Astro adalah konten dirender sebagai HTML sehingga bisa diindeks tanpa JavaScript.
+
+### Bagaimana menangani situs Astro multi-bahasa?
+
+Gunakan hreflang dan URL terpisah per bahasa, lalu pastikan canonical menunjuk ke versi yang tepat.
+
+## Kesimpulan
+
+SEO untuk situs Astro adalah menyusun bagian yang sudah baik menjadi lengkap: metadata unik, canonical dan hreflang, sitemap dan robots.txt, structured data, Open Graph, internal linking, serta performa. Dengan checklist ini, situs statis yang cepat bisa sekaligus mudah ditemukan dan bersaing di mesin pencari.]]></content:encoded>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Sitemap dan Robots.txt untuk Blog: Panduan Lengkap]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/sitemap-dan-robots-txt-untuk-blog/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/sitemap-dan-robots-txt-untuk-blog/</guid>
+      <description><![CDATA[Sitemap membantu mesin pencari menemukan semua halaman blog, sedangkan robots.txt mengatur apa saja yang boleh dirayapi. Berikut cara membuat keduanya di Astro.]]></description>
+      <category><![CDATA[seo]]></category>
+      <category><![CDATA[technical-seo]]></category>
+      <category><![CDATA[sitemap]]></category>
+      <category><![CDATA[robots-txt]]></category>
+      <content:encoded><![CDATA[Sitemap dan robots.txt adalah dua file teknis yang menentukan seberapa mudah mesin pencari memahami struktur blog Anda. Tanpa keduanya yang benar, halaman baru bisa lama terindeks atau bahkan tidak ditemukan sama sekali. Artikel ini menjelaskan apa itu sitemap dan robots.txt, serta cara menyiapkannya untuk blog statis seperti Astro.
+
+## Apa itu sitemap?
+
+Sitemap adalah file XML yang berisi daftar URL halaman penting di situs, lengkap dengan informasi pendukung seperti tanggal modifikasi dan prioritas. Fungsinya memberi tahu mesin pencari: "inilah semua halaman yang ingin saya indeks".
+
+Untuk blog, pastikan sitemap memuat:
+
+- URL beranda
+- Halaman arsip artikel
+- Setiap URL artikel dengan `lastmod`
+- Halaman pendukung seperti *tentang* dan *kontak*
+
+Di Astro, sitemap bisa dibuat dengan integrasi resmi `@astrojs/sitemap`, atau ditulis manual sebagai endpoint seperti contoh berikut:
+
+```ts
+export async function GET() {
+  const posts = await getCollection('posts');
+  const urls = posts.map((post) => ({
+    url: `https://contoh.com/posts/${post.slug}/`,
+    lastmod: post.data.date,
+  }));
+  // render menjadi XML
+}
+```
+
+Yang terpenting: setiap kali artikel baru diterbitkan, sitemap ikut diperbarui.
+
+## Apa itu robots.txt?
+
+Robots.txt adalah file teks yang memberi instruksi kepada crawler tentang halaman mana yang boleh dirayapi. Aturannya sederhana: jangan digunakan untuk menyembunyikan halaman dari indeks (itu tugas `noindex`), gunakan untuk mencegah pengunjung bot membuang waktu di halaman yang tidak berguna.
+
+Contoh minimal untuk blog:
+
+```text
+User-agent: *
+Allow: /
+
+Sitemap: https://contoh.com/sitemap.xml
+```
+
+Baris `Sitemap` penting karena menjadi jalur alternatif bagi Google untuk menemukan sitemap Anda.
+
+## Membuat Sitemap dan Robots di Astro
+
+Di Astro, kedua file biasanya dibuat sebagai endpoint di folder `src/pages/`:
+
+- `src/pages/robots.txt.ts` — menghasilkan `robots.txt`
+- `src/pages/sitemap.xml.ts` — menghasilkan `sitemap.xml`
+
+Keduanya dirender sebagai file statis saat build, sehingga cepat dan tidak perlu server dinamis.
+
+Untuk blog berbasis Astro di GitHub Pages, pastikan URL di dalam sitemap menggunakan domain dan base yang sama dengan konfigurasi deployment, misalnya `https://username.github.io/wims/`. Kesalahan di sini membuat URL sitemap mengarah ke halaman yang tidak ada. Panduan lengkap menerbitkan blog ada di artikel [Cara Deploy Blog Astro ke GitHub Pages](/wims-teknologi/posts/cara-deploy-blog-astro-ke-github-pages/). Kedua file ini adalah bagian dari [checklist SEO untuk situs Astro](/wims-teknologi/posts/seo-untuk-situs-astro/).
+
+## Verifikasi dengan Search Console
+
+Setelah sitemap aktif, daftarkan di [Google Search Console](/wims-teknologi/posts/submit-sitemap-ke-google-search-console/):
+
+1. Verifikasi kepemilikan situs.
+2. Masuk ke menu **Sitemap**, lalu submit URL `sitemap.xml`.
+3. Pantau laporan indeksasi untuk melihat halaman mana yang terindeks dan mana yang bermasalah.
+
+Pengiriman sitemap tidak menjamin semua halaman terindeks, tetapi mempercepat proses penemuan dan memudahkan pelacakan.
+
+## FAQ
+
+### Apakah sitemap wajib untuk blog?
+
+Tidak wajib, tetapi sangat disarankan. Blog dengan banyak artikel baru mendapat manfaat besar karena sitemap mempercepat penemuan konten.
+
+### Bisakah robots.txt memblokir Google sepenuhnya?
+
+Bisa, dengan menulis `Disallow: /`, tetapi nyaris tidak ada alasan untuk melakukannya pada blog yang ingin ditemukan. Gunakan `noindex` untuk halaman tertentu.
+
+### Haruskah setiap artikel masuk ke sitemap?
+
+Ya, selama artikel tersebut layak diindeks. Halaman seperti hasil pencarian atau halaman duplikat sebaiknya tidak dimasukkan.
+
+## Kesimpulan
+
+Sitemap memberi peta halaman pada mesin pencari, sedangkan robots.txt mengatur arah crawler. Untuk blog statis seperti Astro, keduanya mudah dibuat sebagai endpoint yang diperbarui otomatis saat build. Pastikan URL-nya konsisten dengan domain dan base deployment, lalu daftarkan di Google Search Console agar konten baru cepat terindeks.]]></content:encoded>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Static Site Generator Terbaik untuk Blog: Perbandingan]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/static-site-generator-terbaik-untuk-blog/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/static-site-generator-terbaik-untuk-blog/</guid>
+      <description><![CDATA[Membandingkan Astro, Next.js, Hugo, dan Eleventy untuk blog berdasarkan kemudahan, performa, dan ekosistem. Mana yang paling cocok?]]></description>
+      <category><![CDATA[astro]]></category>
+      <category><![CDATA[nextjs]]></category>
+      <category><![CDATA[static-site-generator]]></category>
+      <category><![CDATA[perbandingan]]></category>
+      <content:encoded><![CDATA[Memilih static site generator (SSG) yang tepat menentukan kenyamanan menulis dan performa blog Anda. Artikel ini membandingkan beberapa SSG populer — Astro, Next.js, Hugo, dan Eleventy — agar mudah memutuskan mana yang sesuai kebutuhan.
+
+## Astro: Fokus pada Kecepatan Konten
+
+Astro dirancang untuk situs konten dengan pendekatan *islands architecture*: halaman dirender sebagai HTML statis, dan JavaScript hanya dimuat pada komponen yang benar-benar interaktif. Hasilnya, hampir tanpa JavaScript default.
+
+- **Kelebihan:** performa sangat tinggi, mudah dipelajari, dukungan markdown/MDX baik lewat content collections.
+- **Kekurangan:** untuk fitur dinamis kompleks perlu integrasi tambahan.
+- **Cocok untuk:** blog dan situs konten yang mengutamakan kecepatan dan SEO.
+
+Blog ini dibangun dengan Astro — cara memulainya dijelaskan di [Membangun Blog Cepat dengan Astro di Termux](/wims-teknologi/posts/astro-termux/).
+
+## Next.js: Ekosistem React Lengkap
+
+Next.js adalah framework React yang mendukung SSG dan SSR dalam satu project.
+
+- **Kelebihan:** ekosistem React luas, fleksibel untuk kebutuhan dinamis, dokumentasi lengkap.
+- **Kekurangan:** lebih berat untuk situs konten sederhana, kurva belajar lebih curam.
+- **Cocok untuk:** blog yang ingin tumbuh menjadi aplikasi web dengan fitur dinamis.
+
+Alasan Next.js cocok untuk blog dan SEO dibahas di [Mengapa Next.js Bagus untuk Blog dan SEO](/wims-teknologi/posts/nextjs-seo/).
+
+## Hugo: Cepat untuk Situs Besar
+
+Hugo adalah SSG berbasis Go yang terkenal dengan kecepatan build sangat tinggi.
+
+- **Kelebihan:** build instan bahkan untuk ribuan halaman, tanpa runtime JavaScript.
+- **Kekurangan:** template-nya khas dan agak sulit dikuasai pemula.
+- **Cocok untuk:** blog atau dokumentasi besar yang butuh build cepat.
+
+## Eleventy: Ringan dan Minimalis
+
+Eleventy menekankan kesederhanaan dan fleksibilitas tanpa mengunci ke framework tertentu.
+
+- **Kelebihan:** ringan, bebas memilih templating, tidak ada JavaScript default.
+- **Kekurangan:** fitur perlu dirakit sendiri dari ekosistem plugin.
+- **Cocok untuk:** pengembang yang suka kontrol penuh atas struktur project.
+
+## Tabel Perbandingan Singkat
+
+| Framework | Bahasa | Kemudahan | Performa | Fitur Dinamis |
+|---|---|---|---|---|
+| Astro | JavaScript/TS | Mudah | Tinggi | Sedang (islands) |
+| Next.js | React | Menengah | Tinggi | Tinggi |
+| Hugo | Go | Menengah | Sangat tinggi | Rendah |
+| Eleventy | JavaScript | Mudah | Tinggi | Rendah |
+
+## Bagaimana Memilih?
+
+Pertimbangkan berdasarkan:
+
+- **Kebutuhan saat ini** — blog konten sederhana cukup memakai Astro atau Hugo.
+- **Rencana jangka panjang** — bila ingin fitur aplikasi, Next.js lebih fleksibel.
+- **Keahlian tim** — pilih bahasa dan ekosistem yang sudah dikuasai.
+- **Kemudahan deployment** — semua SSG ini bisa diunggah ke [GitHub Pages](/wims-teknologi/posts/cara-deploy-blog-astro-ke-github-pages/).
+
+## FAQ
+
+### Apakah ada jawaban "terbaik" untuk semua blog?
+
+Tidak. Yang terbaik adalah yang sesuai kebutuhan, keahlian, dan skala project Anda.
+
+### Bisakah berpindah dari satu SSG ke SSG lain?
+
+Bisa, karena konten biasanya berupa markdown yang portabel. Struktur frontmatter dan template perlu disesuaikan, tetapi tulisan tidak perlu ditulis ulang.
+
+### Apakah semua SSG ramah SEO?
+
+Semuanya menghasilkan HTML statis yang bagus untuk SEO. Perbedaannya ada pada kemudahan mengatur metadata dan structured data, di mana Astro dan Next.js cukup unggul.
+
+## Kesimpulan
+
+Astro unggul untuk blog konten yang cepat dan mudah dirawat, Next.js untuk yang butuh fleksibilitas dinamis, Hugo untuk situs besar dengan build super cepat, dan Eleventy untuk yang menyukai kesederhanaan. Mulailah dari kebutuhan nyata blog Anda — semua pilihan sudah cukup baik untuk fondasi [SEO yang solid](/wims-teknologi/posts/seo-untuk-situs-astro/).]]></content:encoded>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Cara Submit Sitemap ke Google Search Console]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/submit-sitemap-ke-google-search-console/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/submit-sitemap-ke-google-search-console/</guid>
+      <description><![CDATA[Mendaftarkan sitemap di Search Console mempercepat penemuan halaman dan memudahkan pemantauan indeksasi. Berikut langkah-langkahnya.]]></description>
+      <category><![CDATA[seo]]></category>
+      <category><![CDATA[google-search-console]]></category>
+      <category><![CDATA[sitemap]]></category>
+      <category><![CDATA[technical-seo]]></category>
+      <content:encoded><![CDATA[Membuat sitemap saja tidak cukup — mesin pencari harus tahu sitemap itu ada. Google Search Console menyediakan cara resmi untuk mendaftarkan sitemap dan memantau indeksasi seluruh halaman. Artikel ini menjelaskan cara submit sitemap ke Google Search Console dari awal.
+
+## Siapkan Sitemap Terlebih Dahulu
+
+Pastikan `sitemap.xml` sudah tersedia di situs dan bisa diakses publik, misalnya di `https://contoh.com/wims/sitemap.xml`. Sitemap yang baik memuat URL beranda, halaman arsip, dan setiap artikel dengan tanggal modifikasi.
+
+Jika belum punya, baca [panduan sitemap dan robots.txt untuk blog](/wims-teknologi/posts/sitemap-dan-robots-txt-untuk-blog/) untuk membuatnya di Astro.
+
+## Verifikasi Kepemilikan Situs
+
+Buka **Google Search Console** dan tambahkan properti:
+
+1. Pilih tipe properti **Domain** atau **URL prefix**.
+2. URL prefix cocok bila hanya ingin mengelola satu subpath, misalnya `https://username.github.io/wims/`.
+3. Ikuti metode verifikasi yang disediakan — untuk GitHub Pages bisa dengan memasukkan tag HTML di `<head>` layout.
+
+Verifikasi membuktikan bahwa Anda pemilik situs, sehingga laporan dan pengaturan hanya bisa diakses oleh Anda.
+
+## Submit Sitemap
+
+Setelah properti terverifikasi:
+
+1. Masuk ke menu **Sitemap** di sidebar.
+2. Ketik bagian akhir URL sitemap saja, misalnya `sitemap.xml` (tanpa domain).
+3. Klik **Kirim**.
+
+Tidak lama kemudian status akan menampilkan apakah sitemap berhasil diproses atau mengandung error.
+
+## Memantau Hasil
+
+Gunakan laporan yang tersedia:
+
+- **Indeksasi Halaman** — melihat halaman mana yang terindeks dan mana yang belum.
+- **Peta Situs** — status sitemap yang dikirim dan jumlah URL di dalamnya.
+- **Perbaikan & Validitas** — masalah seperti halaman tidak ditemukan (404) atau duplikat.
+
+Perlu waktu beberapa hari hingga laporan terisi setelah pengiriman pertama.
+
+## Mengapa Halaman Belum Terindeks?
+
+Beberapa alasan umum:
+
+- **Halaman baru** — Google butuh waktu menjelajah ulang; bisa dipercepat lewat permintaan inspeksi URL.
+- **Terhalang robots.txt** — pastikan tidak memblokir halaman penting.
+- **Noindex** — periksa apakah tag `noindex` terpasang secara tidak sengaja.
+- **Konten tipis** — halaman dengan sedikit nilai bisa diabaikan Google.
+
+Perbaiki penyebabnya, lalu minta pengindeksan ulang melalui alat Inspeksi URL.
+
+## FAQ
+
+### Apakah submit sitemap menjamin halaman terindeks?
+
+Tidak. Sitemap hanya membantu penemuan. Apakah halaman terindeks tetap ditentukan kualitas konten dan teknis situs.
+
+### Berapa lama halaman muncul di Google?
+
+Bisa beberapa hari hingga beberapa minggu. Submit sitemap dan Inspeksi URL membantu mempercepat proses.
+
+### Bisakah lebih dari satu sitemap didaftarkan?
+
+Bisa, bila situs membagi sitemap per kategori. Daftarkan masing-masing URL pada menu yang sama.
+
+## Kesimpulan
+
+Submit sitemap ke Google Search Console adalah langkah kecil dengan dampak besar: Google menemukan halaman lebih cepat, dan Anda mendapat laporan indeksasi yang jelas. Verifikasi kepemilikan, kirim URL sitemap, lalu pantau laporannya secara rutin — termasuk saat artikel baru diterbitkan, seperti yang juga dibahas di [SEO untuk Situs Astro](/wims-teknologi/posts/seo-untuk-situs-astro/).]]></content:encoded>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Tags dan Kategori di Astro: Cara Membuatnya]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/tags-dan-kategori-di-astro/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/tags-dan-kategori-di-astro/</guid>
+      <description><![CDATA[Tags dan kategori membantu pembaca menemukan konten terkait dan memperkuat struktur topik. Berikut cara mengelompokkan dan membuat halaman tag di Astro.]]></description>
+      <category><![CDATA[astro]]></category>
+      <category><![CDATA[tags]]></category>
+      <category><![CDATA[kategori]]></category>
+      <content:encoded><![CDATA[Menandai artikel dengan tags dan kategori membuat blog lebih mudah dijelajahi: pembaca bisa menemukan semua tulisan dalam satu topik, dan struktur situs terlihat jelas bagi mesin pencari. Artikel ini menjelaskan cara membuat tags dan kategori di Astro memakai content collections.
+
+## Definisikan Field di Skema
+
+Pertama, tambahkan field `tags` pada skema koleksi di `src/content.config.ts`:
+
+```ts
+const posts = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    date: z.coerce.date(),
+    tags: z.array(z.string()).default([]),
+  }),
+});
+```
+
+Dengan skema ini, setiap artikel bisa diberi tags pada frontmatter:
+
+```markdown
+---
+title: "Judul Artikel"
+date: "2026-08-17"
+tags: ["seo", "astro"]
+---
+```
+
+Konsep content collections dijelaskan lengkap di [artikel Content Collections di Astro](/wims-teknologi/posts/content-collections-astro/).
+
+## Menampilkan Tags di Halaman Artikel
+
+Untuk menampilkan tags pada setiap artikel, baca field dari frontmatter lalu render sebagai tautan:
+
+```astro
+{post.data.tags.map((t: string) => (
+  <a href={`/tags/${t}/`}>#{t}</a>
+))}
+```
+
+Tautan ini mengarah ke halaman tag yang menampilkan semua artikel bertag sama.
+
+## Membuat Halaman Tag Dinamis
+
+Buat halaman dinamis di `src/pages/tags/[tag]/index.astro` dengan `getStaticPaths` agar satu halaman dihasilkan untuk setiap tag:
+
+```ts
+export async function getStaticPaths() {
+  const posts = await getCollection('posts');
+  const tags = [...new Set(posts.flatMap((p) => p.data.tags))];
+  return tags.map((tag) => ({
+    params: { tag },
+    props: { posts: posts.filter((p) => p.data.tags.includes(tag)) },
+  }));
+}
+```
+
+Halaman ini akan menampilkan semua artikel yang memakai tag tertentu.
+
+## Kategori vs Tags
+
+Keduanya mengelompokkan konten, tetapi perannya berbeda:
+
+- **Kategori** — kelompok besar dan tetap, misalnya "SEO" atau "Astro". Biasanya hanya satu per artikel.
+- **Tags** — label spesifik dan fleksibel, bisa lebih dari satu per artikel.
+
+Untuk blog kecil, tags saja sudah cukup. Kategori berguna saat konten mulai banyak dan butuh hirarki. Bedanya dengan pillar dan cluster pada [riset keyword](/wims-teknologi/posts/cara-riset-keyword-untuk-blog/) adalah hierarki konten yang dirancang, bukan sekadar pelabelan.
+
+## Menampilkan Daftar Semua Tags
+
+Buat halaman indeks tag yang menampilkan semua tag beserta jumlah artikel:
+
+```astro
+{tags.map((t) => (
+  <a href={`/tags/${t}/`}>#{t} ({count})</a>
+))}
+```
+
+Halaman ini membantu pembaca menelusuri seluruh topik dan memberi jalur navigasi tambahan untuk mesin pencari.
+
+## Hubungan dengan SEO
+
+Tags memberi beberapa manfaat SEO:
+
+- **Internal linking** — setiap tag menghubungkan semua artikel bertopik sama.
+- **Struktur topik** — membantu Google memahami cakupan topik situs.
+- **Halaman indeks** — halaman tag ikut terindeks dan masuk sitemap.
+
+Pastikan halaman tag juga masuk [sitemap](/wims-teknologi/posts/sitemap-dan-robots-txt-untuk-blog/) dan gunakan tags secara konsisten, tidak asal menambah label yang sama maknanya.
+
+## FAQ
+
+### Berapa banyak tags per artikel?
+
+Gunakan secukupnya — umumnya dua hingga lima tags yang benar-benar mewakili isi.
+
+### Apakah halaman tag bisa membuat konten duplikat?
+
+Bisa bila terlalu banyak halaman tag dengan isi hampir sama. Gunakan tags yang bermakna dan gabungkan yang sinonim.
+
+### Apakah kategori wajib di Astro?
+
+Tidak wajib. Anda bisa memakai tags saja, atau menambahkan field `category` pada skema bila butuh hirarki yang lebih besar.
+
+## Kesimpulan
+
+Tags dan kategori di Astro dimulai dari skema frontmatter, lalu diwujudkan lewat halaman dinamis untuk setiap tag dan halaman indeks tags. Fitur ini mempermudah navigasi pembaca, memperkuat internal linking, dan membantu struktur topik situs — pelengkap yang baik untuk strategi [konten bercluster](/wims-teknologi/posts/cara-riset-keyword-untuk-blog/).]]></content:encoded>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[SEO Dasar untuk Blog Modern]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/seo-basics/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/seo-basics/</guid>
+      <description><![CDATA[SEO tidak harus rumit. Fokus pada hal mendasar: konten, kecepatan, metadata, dan struktur tautan yang baik.]]></description>
+      <category><![CDATA[seo]]></category>
+      <category><![CDATA[tips]]></category>
+      <content:encoded><![CDATA[Search Engine Optimization (SEO) sering terasa menakutkan, tetapi dasar-dasarnya sederhana. Berikut fokus utamanya.
+
+## Konten Berkualitas
+
+Konten yang relevan dan bermanfaat adalah fondasi SEO. Tulislah untuk pembaca, bukan untuk mesin pencari. Sebelum menulis, lakukan [riset keyword untuk blog](/wims-teknologi/posts/cara-riset-keyword-untuk-blog/) agar topik benar-benar sesuai dengan yang dicari pembaca. Judul dan paragraf pertama yang jelas membantu.
+
+## Kecepatan Halaman
+
+Situs statis yang cepat lebih disukai. Framework seperti Astro menghasilkan HTML statis yang ringan, tanpa JavaScript berat yang memperlambat muat.
+
+## Metadata & Open Graph
+
+Judul, deskripsi, dan tag Open Graph membantu mesin pencari dan platform media sosial memahami halaman Anda. Sediakan `title`, `description`, dan `og:image` untuk setiap halaman — cara menulis [meta description yang menarik](/wims-teknologi/posts/cara-membuat-meta-description-yang-menarik/) dan panduan [Open Graph meta tag untuk blog](/wims-teknologi/posts/open-graph-meta-tag-untuk-blog/) bisa membantu.
+
+## Struktur Tautan & Sitemap
+
+Gunakan struktur URL yang bersih, tautan internal antar artikel, serta sediakan `sitemap.xml` dan `robots.txt` agar mesin pencari mudah mengindeks situs. Lihat [panduan sitemap dan robots.txt untuk blog](/wims-teknologi/posts/sitemap-dan-robots-txt-untuk-blog/) untuk langkah detailnya.
+
+Fokus pada hal-hal mendasar ini, dan SEO Anda akan berjalan dengan baik seiring waktu.]]></content:encoded>
+      <pubDate>Sat, 15 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Kiat Menggunakan Termux untuk Pengembangan Web di Android]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/termux-tips/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/termux-tips/</guid>
+      <description><![CDATA[Termux memungkinkan menjalankan lingkungan Linux di Android. Berikut kiat praktis untuk pengembangan web di dalamnya.]]></description>
+      <category><![CDATA[termux]]></category>
+      <category><![CDATA[android]]></category>
+      <category><![CDATA[tips]]></category>
+      <content:encoded><![CDATA[Termux mengubah ponsel Android menjadi lingkungan pengembangan yang sesungguhnya. Jika Anda baru memulai, baca dulu [cara setup Termux untuk pengembangan web](/wims-teknologi/posts/cara-setup-termux-untuk-pengembangan-web/) untuk langkah instalasi dan izin penyimpanan. Berikut beberapa kiat yang berguna.
+
+## Instal Paket yang Tepat
+
+Paket inti untuk pengembangan web:
+
+- `nodejs` dan `npm` untuk JavaScript
+- `git` untuk kontrol versi
+- `python` bila diperlukan untuk skrip
+
+Gunakan `pkg install nama-paket` untuk menginstal.
+
+## Perhatikan Arsitektur dan Biner
+
+Beberapa paket biner (seperti `sharp` atau modul SWC) tidak tersedia untuk arsitektur Android. Bila build gagal karena biner tidak ditemukan, cari alternatif yang murni JavaScript atau gunakan framework yang lebih ramah seperti Astro.
+
+## Manajemen Ruang Penyimpanan
+
+Termux menyimpan semua data di penyimpanan internal. Bersihkan cache dengan `pkg clean` dan gunakan `.gitignore` yang tepat agar `node_modules` tidak ter-commit.
+
+Dengan kiat di atas, Anda bisa membangun dan mengelola situs langsung dari ponsel di mana saja.]]></content:encoded>
+      <pubDate>Fri, 14 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Membangun Blog Cepat dengan Astro di Termux]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/astro-termux/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/astro-termux/</guid>
+      <description><![CDATA[Astro menghasilkan situs statis yang sangat cepat dan mudah dibangun langsung dari ponsel Android via Termux.]]></description>
+      <category><![CDATA[astro]]></category>
+      <category><![CDATA[termux]]></category>
+      <category><![CDATA[framework]]></category>
+      <content:encoded><![CDATA[Astro adalah framework untuk membangun situs yang cepat dengan mengirimkan hampir tanpa JavaScript. Situs blog ini sendiri dibangun dengan Astro langsung dari ponsel Android menggunakan Termux.
+
+## Kenapa Astro?
+
+Astro melakukan "pengiriman nol JavaScript secara default". Halaman dirender sebagai HTML statis pada saat build, sehingga:
+
+- Waktu muat sangat cepat
+- Skor performa dan SEO tinggi
+- Mudah di-host di GitHub Pages
+
+## Astro di Termux
+
+Termux adalah emulator terminal untuk Android yang memungkinkan menjalankan lingkungan Linux ringan. Dengan `pkg install nodejs` lalu `npm create astro@latest`, Anda bisa membangun dan me-*build* situs Astro langsung di ponsel.
+
+Satu hal yang perlu diperhatikan: pastikan memakai versi Node yang kompatibel, dan gunakan perintah `node node_modules/astro/astro.js build` bila skrip `astro` tidak tersedia di PATH. Panduan langkah demi langkah ada di artikel [cara setup Termux untuk pengembangan web](/wims-teknologi/posts/cara-setup-termux-untuk-pengembangan-web/).
+
+## Content Collections
+
+Astro memiliki fitur *content collections* untuk mengelola artikel markdown dengan skema frontmatter yang ketat, sehingga struktur konten tetap rapi dan dapat divalidasi saat build.
+
+Kesimpulannya, Astro adalah pilihan bagus untuk blog cepat, dan Termux membuatnya bisa dikerjakan dari mana saja. Setelah selesai membangun, pelajari [cara deploy blog Astro ke GitHub Pages](/wims-teknologi/posts/cara-deploy-blog-astro-ke-github-pages/) agar blog bisa dibuka publik.]]></content:encoded>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Mengapa Next.js Bagus untuk Blog dan SEO]]></title>
+      <link>https://aixwim.github.io/wims-teknologi/posts/nextjs-seo/</link>
+      <guid isPermaLink="true">https://aixwim.github.io/wims-teknologi/posts/nextjs-seo/</guid>
+      <description><![CDATA[Next.js menawarkan SSG dan SSR yang membantu SEO serta performa. Berikut alasannya.]]></description>
+      <category><![CDATA[seo]]></category>
+      <category><![CDATA[nextjs]]></category>
+      <category><![CDATA[framework]]></category>
+      <content:encoded><![CDATA[Next.js adalah framework React yang populer untuk membangun web modern. Untuk blog, ia memberikan beberapa keunggulan:
+
+## Static Site Generation (SSG)
+
+Dengan SSG, halaman di-generate saat build. Hasilnya HTML statis yang:
+
+- Sangat cepat dimuat
+- Mudah diindeks mesin pencari
+- Tidak memerlukan JavaScript untuk menampilkan konten
+
+## Metadata & Open Graph
+
+Next.js menyediakan API `metadata` untuk mengontrol judul, deskripsi, dan Open Graph setiap halaman, yang penting untuk SEO dan sharing di media sosial.
+
+## Sitemap & Robots
+
+Ada dukungan bawaan untuk `sitemap.xml` dan `robots.txt` yang membantu mesin pencari memahami struktur situs. Prinsip yang sama berlaku untuk blog statis mana pun — lihat [panduan sitemap dan robots.txt untuk blog](/wims-teknologi/posts/sitemap-dan-robots-txt-untuk-blog/).
+
+Kesimpulannya, Next.js adalah pilihan tepat untuk blog yang cepat dan SEO-friendly.]]></content:encoded>
+      <pubDate>Mon, 10 Aug 2026 00:00:00 GMT</pubDate>
+    </item>
+</channel>
+</rss>
